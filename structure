@@ -1,0 +1,16 @@
+project-folder/
+├── index.html
+├── style.css
+├── script.js
+├── images/
+│   ├── logos/
+│   │   └── logo.png          ← Your business logo
+│   ├── about/
+│   │   └── who-we-are.jpg    ← Team photo for "Who We Are"
+│   ├── team/
+│   │   └── ceo.jpg           ← Founder's photo (Muwanguzi Musa)
+│   ├── websites/
+│   ├── posters/
+│   ├── videography/
+│   │   └── thumbnails/
+│   └── ...

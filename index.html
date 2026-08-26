@@ -1,0 +1,1752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ========== SEO META TAGS ========== -->
+    <title>Victor Tech | Website Design, Branding, Graphics & Photography in Uganda</title>
+    <meta name="description" content="Victor Tech provides website design, mobile applications, branding, graphic design, photography, videography, software installation and secretarial services in Mukono, Uganda." />
+    <meta name="keywords" content="Victor Tech, Website Design Uganda, Graphic Design Mukono, Branding, Photography, Videography, Software Installation, Printing, Creative Agency Uganda" />
+    <meta name="author" content="Victor Tech" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- ========== OPEN GRAPH / SOCIAL META ========== -->
+    <meta property="og:title" content="Victor Tech | Technology & Creative Solutions" />
+    <meta property="og:description" content="Professional technology and creative solutions company in Uganda. Website design, branding, photography, videography, and more." />
+    <meta property="og:image" content="images/logo/logo.png" />
+    <meta property="og:url" content="https://victortech.ug/" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- ========== FAVICON ========== -->
+    <link rel="icon" type="image/png" href="images/logo/logo.png" />
+    <link rel="apple-touch-icon" href="images/logo/logo.png" />
+
+    <!-- ========== GOOGLE FONTS ========== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- ========== FONT AWESOME ========== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- ========== EXTERNAL CSS ========== -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- ========== JSON-LD STRUCTURED DATA (SEO) ========== -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Victor Tech",
+        "image": "images/logo/logo.png",
+        "telephone": "+256766783991",
+        "email": "victortech49@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Mukono",
+            "addressCountry": "UG"
+        },
+        "url": "https://victortech.ug",
+        "description": "Victor Tech provides website design, mobile applications, branding, graphic design, photography, videography, software installation and secretarial services in Mukono, Uganda.",
+        "openingHours": "Mo-Sa 08:00-19:00"
+    }
+    </script>
+
+    <style>
+        /* ===== HOME PAGE PREMIUM STYLES ===== */
+
+        /* ---- Global variables (overrides external CSS) ---- */
+        :root {
+            --maroon: #8E1C1C;
+            --maroon-dark: #6a1414;
+            --maroon-light: #b02424;
+            --orange: #E4A83B;
+            --orange-light: #f0c65a;
+            --white: #ffffff;
+            --off-white: #f8f6f4;
+            --gray-100: #eae7e3;
+            --gray-200: #d5d0ca;
+            --gray-300: #b5aea6;
+            --gray-400: #8f867d;
+            --gray-500: #6b6258;
+            --gray-600: #4d453d;
+            --gray-700: #3a342e;
+            --gray-800: #2a2520;
+            --gray-900: #1a1714;
+            --font-primary: 'Poppins', sans-serif;
+            --font-secondary: 'Montserrat', sans-serif;
+            --font-body: 'Inter', sans-serif;
+            --radius: 16px;
+            --radius-sm: 8px;
+            --shadow-sm: 0 2px 12px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 8px 32px rgba(0, 0, 0, 0.08);
+            --shadow-lg: 0 16px 60px rgba(0, 0, 0, 0.12);
+            --shadow-xl: 0 24px 80px rgba(0, 0, 0, 0.18);
+            --transition: 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+
+        
+
+        /* ============================================================
+           HEADER — FIXED
+           ============================================================ */
+        #header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.94);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border-bottom: 1px solid transparent;
+            transition: all 0.35s ease;
+            height: 72px;
+            display: flex;
+            align-items: center;
+        }
+
+        [data-theme="dark"] {
+            background-color: #12100e;
+            color: #ffffff;
+        }
+        [data-theme="dark"] #header {
+            background: rgba(18, 16, 14, 0.94);
+            border-bottom-color: rgba(255, 255, 255, 0.05);
+        }
+        #header.scrolled {
+            box-shadow: 0 2px 32px rgba(0, 0, 0, 0.08);
+            border-bottom-color: var(--gray-100);
+        }
+        [data-theme="dark"] #header.scrolled {
+            border-bottom-color: rgba(255, 255, 255, 0.06);
+            box-shadow: 0 2px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            gap: 1rem;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-shrink: 0;
+        }
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--maroon);
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .logo-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            padding: 4px;
+        }
+        .logo-text .main {
+            font-family: var(--font-secondary);
+            font-weight: 800;
+            font-size: 1.1rem;
+            color: var(--maroon);
+            letter-spacing: -0.5px;
+        }
+        .logo-text .main span {
+            color: var(--orange);
+        }
+        .logo-text .tag {
+            display: block;
+            font-size: 0.5rem;
+            font-weight: 500;
+            color: var(--gray-500);
+            letter-spacing: 0.5px;
+            line-height: 1;
+            margin-top: -2px;
+        }
+        [data-theme="dark"] .logo-text .main {
+            color: var(--maroon);
+        }
+        [data-theme="dark"] .logo-text .main span {
+            color: var(--orange);
+        }
+        [data-theme="dark"] .logo-text .tag {
+            color: var(--gray-400);
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            margin: 0 0.5rem;
+        }
+        .nav-menu a {
+            font-family: var(--font-primary);
+            font-weight: 500;
+            font-size: 0.85rem;
+            padding: 0.4rem 0.9rem;
+            border-radius: 50px;
+            color: var(--gray-600);
+            transition: var(--transition);
+            position: relative;
+        }
+        .nav-menu a:hover,
+        .nav-menu a.active {
+            color: var(--maroon);
+            background: rgba(142, 28, 28, 0.06);
+        }
+        .nav-menu a.active {
+            font-weight: 600;
+        }
+        [data-theme="dark"] .nav-menu a {
+            color: var(--gray-300);
+        }
+        [data-theme="dark"] .nav-menu a:hover,
+        [data-theme="dark"] .nav-menu a.active {
+            color: var(--orange-light);
+            background: rgba(228, 168, 59, 0.08);
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            flex-shrink: 0;
+        }
+        .nav-actions .btn {
+            font-size: 0.75rem;
+            padding: 0.35rem 1.2rem;
+        }
+        .theme-toggle {
+            background: var(--gray-100);
+            border: none;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1rem;
+            color: var(--gray-700);
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .theme-toggle:hover {
+            background: var(--gray-200);
+            transform: rotate(15deg);
+        }
+        [data-theme="dark"] .theme-toggle {
+            background: #3a342e;
+            color: var(--orange-light);
+        }
+        [data-theme="dark"] .theme-toggle:hover {
+            background: #4d453d;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 4px;
+            flex-shrink: 0;
+        }
+        .hamburger span {
+            width: 26px;
+            height: 2.5px;
+            background: var(--gray-800);
+            border-radius: 4px;
+            transition: var(--transition);
+        }
+        [data-theme="dark"] .hamburger span {
+            background: var(--gray-200);
+        }
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+
+        /* ============================================================
+           MOBILE NAV
+           ============================================================ */
+        @media (max-width: 992px) {
+            .nav-menu {
+                position: fixed;
+                top: 72px;
+                left: 0;
+                right: 0;
+                background: rgba(255, 255, 255, 0.98);
+                backdrop-filter: blur(12px);
+                -webkit-backdrop-filter: blur(12px);
+                flex-direction: column;
+                padding: 1.5rem 2rem;
+                gap: 0.3rem;
+                border-bottom: 1px solid var(--gray-100);
+                transform: translateY(-120%);
+                opacity: 0;
+                transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+                margin: 0;
+                align-items: stretch;
+                border-radius: 0 0 16px 16px;
+                z-index: 999;
+                pointer-events: none;
+            }
+            .nav-menu.open {
+                transform: translateY(0);
+                opacity: 1;
+                pointer-events: auto;
+            }
+            .nav-menu a {
+                padding: 0.7rem 1rem;
+                border-radius: 8px;
+                text-align: center;
+                font-size: 0.95rem;
+            }
+            .hamburger {
+                display: flex;
+            }
+            [data-theme="dark"] .nav-menu {
+                background: rgba(18, 16, 14, 0.98);
+                border-bottom-color: rgba(255, 255, 255, 0.06);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .nav-actions .btn {
+                display: none;
+            }
+            .logo-text .tag {
+                display: none;
+            }
+            .logo-text .main {
+                font-size: 0.95rem;
+            }
+        }
+
+        
+
+        /* ============================================================
+           FOOTER — MOBILE OPTIMIZED
+           ============================================================ */
+        footer {
+            background: var(--gray-900);
+            color: rgba(255, 255, 255, 0.8);
+            padding: 3rem 0 1.5rem;
+            margin-top: 2rem;
+        }
+        [data-theme="dark"] footer {
+            background: #0d0b09;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        .footer-brand p {
+            font-size: 0.9rem;
+            opacity: 0.7;
+            max-width: 300px;
+            margin: 0.5rem 0;
+        }
+        .footer-brand .socials {
+            display: flex;
+            gap: 0.6rem;
+            margin-top: 0.5rem;
+        }
+        .footer-brand .socials a {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.06);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            transition: var(--transition);
+        }
+        .footer-brand .socials a:hover {
+            background: var(--maroon);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+        .footer-brand .logo .logo-text .main {
+            color: var(--white);
+        }
+        .footer-brand .logo .logo-text .main span {
+            color: var(--orange);
+        }
+        [data-theme="dark"] .footer-brand .logo .logo-text .main {
+            color: var(--maroon);
+        }
+        [data-theme="dark"] .footer-brand .logo .logo-text .main span {
+            color: var(--orange);
+        }
+
+        .footer-links h4,
+        .footer-services h4,
+        .footer-newsletter h4 {
+            color: var(--white);
+            font-size: 0.95rem;
+            margin-bottom: 0.8rem;
+        }
+        .footer-links ul,
+        .footer-services ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+        }
+        .footer-links ul li a,
+        .footer-services ul li a {
+            font-size: 0.85rem;
+            opacity: 0.7;
+            transition: var(--transition);
+        }
+        .footer-links ul li a:hover,
+        .footer-services ul li a:hover {
+            opacity: 1;
+            color: var(--orange);
+        }
+        .footer-newsletter p {
+            font-size: 0.85rem;
+            opacity: 0.7;
+            margin-bottom: 0.8rem;
+        }
+        .newsletter-form {
+            display: flex;
+            gap: 0.5rem;
+        }
+        .newsletter-form input {
+            flex: 1;
+            padding: 0.5rem 0.8rem;
+            border-radius: 50px;
+            border: none;
+            background: rgba(255, 255, 255, 0.08);
+            color: var(--white);
+            font-family: var(--font-body);
+            font-size: 0.85rem;
+        }
+        .newsletter-form input::placeholder {
+            color: rgba(255, 255, 255, 0.4);
+        }
+        .newsletter-form input:focus {
+            outline: 2px solid var(--orange);
+        }
+        .newsletter-form button {
+            padding: 0.5rem 1.2rem;
+            border-radius: 50px;
+            border: none;
+            background: var(--orange);
+            color: var(--gray-900);
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 0.8rem;
+            white-space: nowrap;
+        }
+        .newsletter-form button:hover {
+            background: var(--orange-light);
+            transform: scale(1.04);
+        }
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            padding-top: 1.2rem;
+            text-align: center;
+            font-size: 0.8rem;
+            opacity: 0.5;
+        }
+
+        @media (max-width: 992px) {
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 2rem;
+            }
+        }
+        @media (max-width: 768px) {
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 1.8rem 1.5rem;
+            }
+            .footer-brand {
+                grid-column: 1 / -1;
+                text-align: center;
+            }
+            .footer-brand p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .footer-brand .socials {
+                justify-content: center;
+            }
+            .footer-links h4,
+            .footer-services h4,
+            .footer-newsletter h4 {
+                font-size: 0.9rem;
+            }
+            .footer-links ul,
+            .footer-services ul {
+                gap: 0.2rem;
+            }
+            .footer-links ul li a,
+            .footer-services ul li a {
+                font-size: 0.8rem;
+                padding: 0.1rem 0;
+            }
+            .footer-newsletter {
+                grid-column: 1 / -1;
+                text-align: center;
+            }
+            .footer-newsletter p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .newsletter-form {
+                max-width: 380px;
+                margin: 0 auto;
+                flex-wrap: wrap;
+            }
+            .newsletter-form button {
+                width: 100%;
+                justify-content: center;
+            }
+            .footer-bottom {
+                font-size: 0.7rem;
+            }
+        }
+        @media (max-width: 480px) {
+            .footer-grid {
+                gap: 1.5rem 1rem;
+            }
+            .footer-links ul li a,
+            .footer-services ul li a {
+                font-size: 0.75rem;
+            }
+        }
+
+        /* ============================================================
+           WHATSAPP FLOAT
+           ============================================================ */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: #25D366;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: 0 4px 24px rgba(37, 211, 102, 0.35);
+            z-index: 999;
+            transition: var(--transition);
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.08);
+            box-shadow: 0 6px 32px rgba(37, 211, 102, 0.5);
+        }
+        @media (max-width: 600px) {
+            .whatsapp-float {
+                width: 48px;
+                height: 48px;
+                font-size: 1.6rem;
+                bottom: 18px;
+                right: 18px;
+            }
+        }
+
+        /* ============================================================
+           PAGE TRANSITION & HOME STYLES (as originally provided)
+           ============================================================ */
+        .page-wrapper {
+            opacity: 0;
+            animation: pageFadeIn 0.8s ease forwards;
+        }
+        @keyframes pageFadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.3rem;
+            color: var(--gray-500);
+            font-size: 0.75rem;
+            animation: bounceDown 2s ease-in-out infinite;
+            z-index: 2;
+        }
+        .scroll-indicator i {
+            font-size: 1.2rem;
+            color: var(--orange);
+        }
+        @keyframes bounceDown {
+            0%, 100% { transform: translateX(-50%) translateY(0); }
+            50% { transform: translateX(-50%) translateY(8px); }
+        }
+
+        .trusted-section {
+            padding: 3rem 0;
+            background: var(--white);
+            border-bottom: 1px solid var(--gray-100);
+        }
+        [data-theme="dark"] .trusted-section {
+            background: #1a1714;
+            border-color: #3d3730;
+        }
+        .trusted-section .trusted-title {
+            text-align: center;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--gray-400);
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+        .trusted-logos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 2.5rem;
+        }
+        .trusted-logos .logo-item {
+            background: var(--off-white);
+            padding: 0.8rem 1.5rem;
+            border-radius: var(--radius-sm);
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--gray-500);
+            transition: var(--transition);
+            border: 1px solid var(--gray-200);
+        }
+        [data-theme="dark"] .trusted-logos .logo-item {
+            background: #2a2520;
+            border-color: #3d3730;
+            color: var(--gray-400);
+        }
+        .trusted-logos .logo-item:hover {
+            border-color: var(--maroon);
+            transform: scale(1.05);
+            color: var(--maroon);
+        }
+
+        .home-services .service-card {
+            cursor: default;
+        }
+        .home-services .service-card .learn-more {
+            display: inline-block;
+            margin-top: 0.8rem;
+            color: var(--maroon);
+            font-weight: 600;
+            font-size: 0.85rem;
+            transition: var(--transition);
+        }
+        .home-services .service-card .learn-more:hover {
+            color: var(--orange);
+            transform: translateX(4px);
+        }
+
+        .recent-projects .project-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .recent-projects .project-item {
+            border-radius: var(--radius);
+            overflow: hidden;
+            aspect-ratio: 4/3;
+            background: var(--gray-200);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: var(--gray-400);
+            transition: var(--transition);
+            position: relative;
+            cursor: pointer;
+        }
+        [data-theme="dark"] .recent-projects .project-item {
+            background: #2a2520;
+        }
+        .recent-projects .project-item:hover {
+            transform: scale(1.03);
+            box-shadow: var(--shadow-lg);
+        }
+        .recent-projects .project-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .recent-projects .project-item:hover img {
+            transform: scale(1.08);
+        }
+        .recent-projects .project-item .project-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(142, 28, 28, 0.85);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: var(--transition);
+            color: var(--white);
+            padding: 1rem;
+            text-align: center;
+        }
+        .recent-projects .project-item:hover .project-overlay {
+            opacity: 1;
+        }
+        .recent-projects .project-item .project-overlay h5 {
+            color: var(--white);
+            font-size: 1rem;
+        }
+        .recent-projects .project-item .project-overlay p {
+            font-size: 0.8rem;
+            opacity: 0.8;
+        }
+        .recent-projects .view-all-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            margin-top: 2rem;
+            color: var(--maroon);
+            font-weight: 600;
+            transition: var(--transition);
+        }
+        .recent-projects .view-all-btn:hover {
+            color: var(--orange);
+            gap: 1rem;
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .process-item {
+            text-align: center;
+            padding: 1.5rem 1rem;
+            background: var(--white);
+            border-radius: var(--radius);
+            border: 1px solid var(--gray-100);
+            transition: var(--transition);
+            position: relative;
+        }
+        [data-theme="dark"] .process-item {
+            background: #2a2520;
+            border-color: #3d3730;
+        }
+        .process-item:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--orange);
+        }
+        .process-item .step-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: var(--maroon);
+            color: var(--white);
+            border-radius: 50%;
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: 0.8rem;
+        }
+        .process-item h4 {
+            font-size: 0.95rem;
+            margin-bottom: 0.2rem;
+        }
+        .process-item p {
+            font-size: 0.8rem;
+            color: var(--gray-500);
+        }
+        .process-item .arrow {
+            position: absolute;
+            right: -1.2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.5rem;
+            color: var(--orange);
+        }
+        .process-item:last-child .arrow {
+            display: none;
+        }
+
+        .testimonials-preview {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .testimonials-preview .testimonial-card {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: var(--radius);
+            border: 1px solid var(--gray-100);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+        [data-theme="dark"] .testimonials-preview .testimonial-card {
+            background: #2a2520;
+            border-color: #3d3730;
+        }
+        .testimonials-preview .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+        .testimonials-preview .testimonial-card .stars {
+            color: var(--orange);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+        .testimonials-preview .testimonial-card blockquote {
+            font-size: 0.95rem;
+            color: var(--gray-600);
+            font-style: italic;
+            margin-bottom: 0.8rem;
+        }
+        .testimonials-preview .testimonial-card .client {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+        .testimonials-preview .testimonial-card .client .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--maroon);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+        .testimonials-preview .testimonial-card .client .info h4 {
+            font-size: 0.9rem;
+            margin-bottom: 0.1rem;
+        }
+        .testimonials-preview .testimonial-card .client .info span {
+            font-size: 0.75rem;
+            color: var(--gray-400);
+        }
+
+        .home-cta {
+            margin-top: 3rem;
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, var(--maroon), var(--maroon-dark));
+            border-radius: var(--radius);
+            text-align: center;
+            color: var(--white);
+        }
+        .home-cta h2 {
+            color: var(--white);
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+        .home-cta p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto 1.5rem;
+        }
+        .home-cta .btn-white {
+            background: var(--white);
+            color: var(--maroon);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+        }
+        .home-cta .btn-white:hover {
+            background: var(--off-white);
+            transform: translateY(-3px);
+        }
+        .home-cta .btn-outline-white {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+        .home-cta .btn-outline-white:hover {
+            background: var(--white);
+            color: var(--maroon);
+            transform: translateY(-3px);
+        }
+
+        .chat-widget-home {
+            position: fixed;
+            bottom: 100px;
+            right: 28px;
+            z-index: 997;
+            background: var(--white);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-xl);
+            border: 1px solid var(--gray-200);
+            padding: 0.8rem 1.2rem;
+            display: none;
+            max-width: 280px;
+            animation: chatSlideUp 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .chat-widget-home.open {
+            display: block;
+        }
+        @keyframes chatSlideUp {
+            from { opacity: 0; transform: translateY(20px) scale(0.95); }
+            to { opacity: 1; transform: translateY(0) scale(1); }
+        }
+        .chat-widget-home .chat-header {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            margin-bottom: 0.5rem;
+        }
+        .chat-widget-home .chat-header .avatar {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: var(--maroon);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-weight: 700;
+            font-size: 0.8rem;
+        }
+        .chat-widget-home .chat-header h5 {
+            font-size: 0.85rem;
+            margin-bottom: 0.05rem;
+        }
+        .chat-widget-home .chat-header .status {
+            font-size: 0.65rem;
+            color: #4CAF50;
+            font-weight: 500;
+        }
+        .chat-widget-home .chat-message {
+            font-size: 0.85rem;
+            color: var(--gray-600);
+            margin-bottom: 0.5rem;
+            background: var(--off-white);
+            padding: 0.5rem 0.8rem;
+            border-radius: var(--radius-sm);
+            border-bottom-left-radius: 4px;
+        }
+        .chat-widget-home .chat-actions {
+            display: flex;
+            gap: 0.4rem;
+        }
+        .chat-widget-home .chat-actions a {
+            flex: 1;
+            text-align: center;
+            padding: 0.3rem 0.5rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        .chat-widget-home .chat-actions .wa-btn {
+            background: #25D366;
+            color: var(--white);
+        }
+        .chat-widget-home .chat-actions .wa-btn:hover {
+            transform: scale(1.05);
+        }
+        .chat-widget-home .chat-actions .close-btn {
+            background: var(--gray-200);
+            color: var(--gray-700);
+            cursor: pointer;
+            border: none;
+            font-family: var(--font-body);
+        }
+        .chat-widget-home .chat-actions .close-btn:hover {
+            background: var(--gray-300);
+        }
+        .chat-toggle-home {
+            position: fixed;
+            bottom: 100px;
+            right: 28px;
+            z-index: 996;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: var(--maroon);
+            color: var(--white);
+            border: none;
+            font-size: 1.6rem;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(142, 28, 28, 0.35);
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .chat-toggle-home:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 30px rgba(142, 28, 28, 0.5);
+        }
+        .chat-toggle-home .badge {
+            position: absolute;
+            top: -4px;
+            right: -4px;
+            background: #4CAF50;
+            color: var(--white);
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            font-size: 0.6rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 1024px) {
+            .process-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .process-item .arrow { display: none; }
+            .recent-projects .project-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .testimonials-preview {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 768px) {
+            .process-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .recent-projects .project-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .testimonials-preview {
+                grid-template-columns: 1fr;
+                max-width: 400px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .home-cta h2 {
+                font-size: 1.6rem;
+            }
+            .trusted-logos {
+                gap: 1rem;
+            }
+            .trusted-logos .logo-item {
+                padding: 0.5rem 1rem;
+                font-size: 0.75rem;
+            }
+            .scroll-indicator { display: none; }
+            .chat-widget-home {
+                right: 20px;
+                max-width: 260px;
+            }
+            .chat-toggle-home {
+                width: 48px;
+                height: 48px;
+                font-size: 1.3rem;
+                right: 20px;
+                bottom: 90px;
+            }
+        }
+        @media (max-width: 480px) {
+            .process-grid {
+                grid-template-columns: 1fr;
+                max-width: 300px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .recent-projects .project-grid {
+                grid-template-columns: 1fr;
+                max-width: 350px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .home-cta {
+                padding: 2.5rem 1.5rem;
+            }
+        }
+
+        /* ===== DARK MODE OVERRIDES ===== */
+        [data-theme="dark"] .process-item {
+            background: #2a2520;
+            border-color: #3d3730;
+        }
+        [data-theme="dark"] .testimonials-preview .testimonial-card {
+            background: #2a2520;
+            border-color: #3d3730;
+        }
+        [data-theme="dark"] .trusted-logos .logo-item {
+            background: #2a2520;
+            border-color: #3d3730;
+        }
+        [data-theme="dark"] .chat-widget-home {
+            background: #2a2520;
+            border-color: #3d3730;
+        }
+        [data-theme="dark"] .chat-widget-home .chat-message {
+            background: #1a1714;
+            color: var(--gray-300);
+        }
+
+        /* ===== SCROLLBAR ===== */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--off-white);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--maroon);
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--maroon-dark);
+        }
+        [data-theme="dark"] ::-webkit-scrollbar-track {
+            background: #1a1714;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page-wrapper">
+
+        <!-- ========== HEADER ========== -->
+        <header id="header">
+            <div class="container nav-container">
+                <a href="index.html" class="logo" aria-label="Victor Tech Home">
+                    <div class="logo-icon"><img src="images/logo/logo.png" alt="Victor Tech official logo" /></div>
+                    <div class="logo-text"><span class="main">VICTOR<span>TECH</span></span><span class="tag">Designing Solutions, Capturing Moments</span></div>
+                </a>
+                <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="pricing.html">Pricing</a>
+                    <a href="testimonials.html">Testimonials</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+                <div class="nav-actions">
+                    <a href="contact.html" class="btn btn-primary btn-sm">Get Started</a>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
+                    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- ========== HERO SECTION ========== -->
+        <section class="hero" id="home">
+            <div class="floating-shapes">
+                <div class="shape"></div>
+                <div class="shape"></div>
+                <div class="shape"></div>
+            </div>
+            <div class="container">
+                <div class="hero-content reveal">
+                    <div class="hero-badge animate-text">
+                        <i class="fas fa-rocket"></i> Leading Tech &amp; Creative Agency in Uganda
+                    </div>
+                    <h1 class="animate-text" style="animation-delay:0.1s;">
+                        Transforming Ideas into
+                        <span class="highlight">Digital Excellence</span>
+                    </h1>
+                    <p class="animate-text" style="animation-delay:0.2s;">
+                        We provide cutting-edge technology solutions, creative branding, professional photography,
+                        videography, and business support services designed to help businesses grow.
+                    </p>
+                    <div class="hero-buttons animate-text" style="animation-delay:0.3s;">
+                        <a href="contact.html" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Get a Free Quote</a>
+                        <a href="services.html" class="btn btn-outline"><i class="fas fa-arrow-right"></i> View Our Services</a>
+                    </div>
+                    <div class="hero-stats animate-text" style="animation-delay:0.4s;">
+                        <div class="stat">
+                            <span class="stat-number" data-count="500">0</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="300">0</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="5">0</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="98">0</span>
+                            <span class="stat-label">% Satisfaction</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual reveal">
+                    <div class="mockup-wrapper">
+                        <div class="mockup-content">
+                            <div class="device-row">
+                                <div class="device laptop">
+                                    <i class="fas fa-laptop"></i>
+                                    <span>Web</span>
+                                </div>
+                                <div class="device">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    <span>Mobile</span>
+                                </div>
+                                <div class="device">
+                                    <i class="fas fa-camera"></i>
+                                    <span>Photo</span>
+                                </div>
+                                <div class="device">
+                                    <i class="fas fa-video"></i>
+                                    <span>Video</span>
+                                </div>
+                            </div>
+                            <div class="tag-cloud">
+                                <span class="tag">Branding</span>
+                                <span class="tag orange">Design</span>
+                                <span class="tag dark">Tech</span>
+                                <span class="tag">Creative</span>
+                            </div>
+                            <p style="font-size:0.8rem; color:var(--gray-500); margin-top:0.2rem;">
+                                <i class="fas fa-check-circle" style="color:var(--orange);"></i> Trusted by 300+ businesses
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <!-- ========== TRUSTED BY SECTION ========== -->
+        <section class="trusted-section">
+            <div class="container">
+                <div class="trusted-title">Trusted by Businesses Across Uganda</div>
+                <div class="trusted-logos">
+                    <div class="logo-item">🏫 Seeta University</div>
+                    <div class="logo-item">📚 BrightFuture Schools</div>
+                    <div class="logo-item">🏢 JMS Enterprises</div>
+                    <div class="logo-item">🎉 Grace Events</div>
+                    <div class="logo-item">🏛️ Mukono District</div>
+                    <div class="logo-item">⭐ And Many More...</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== SERVICES SECTION (Home Preview) ========== -->
+        <section id="services" style="padding:60px 0;">
+            <div class="container">
+                <div class="text-center reveal">
+                    <span class="section-tag">What We Do</span>
+                    <h2 class="section-title">Our Services</h2>
+                    <p class="section-subtitle">Comprehensive technology and creative solutions tailored to your business needs.</p>
+                </div>
+
+                <div class="services-grid home-services">
+                    <!-- Website Design -->
+                    <div class="service-card reveal">
+                        <div class="icon"><i class="fas fa-code"></i></div>
+                        <h3>Website Design</h3>
+                        <p>Professional, responsive websites that convert visitors into customers.</p>
+                        <a href="services.html" class="learn-more">Learn More →</a>
+                    </div>
+                    <!-- Mobile Applications -->
+                    <div class="service-card reveal">
+                        <div class="icon"><i class="fas fa-mobile-alt"></i></div>
+                        <h3>Mobile Applications</h3>
+                        <p>Custom mobile apps for iOS and Android to reach your customers anywhere.</p>
+                        <a href="services.html" class="learn-more">Learn More →</a>
+                    </div>
+                    <!-- Branding & Graphics -->
+                    <div class="service-card reveal">
+                        <div class="icon"><i class="fas fa-paint-brush"></i></div>
+                        <h3>Branding &amp; Graphics</h3>
+                        <p>Logo design, business cards, posters, banners, and complete brand identity.</p>
+                        <a href="services.html" class="learn-more">Learn More →</a>
+                    </div>
+                    <!-- Photography -->
+                    <div class="service-card reveal">
+                        <div class="icon"><i class="fas fa-camera-retro"></i></div>
+                        <h3>Professional Photography</h3>
+                        <p>Weddings, events, corporate headshots, and passport photos.</p>
+                        <a href="services.html" class="learn-more">Learn More →</a>
+                    </div>
+                    <!-- Videography -->
+                    <div class="service-card reveal">
+                        <div class="icon"><i class="fas fa-video"></i></div>
+                        <h3>Videography</h3>
+                        <p>Event coverage, corporate videos, and cinematic storytelling.</p>
+                        <a href="services.html" class="learn-more">Learn More →</a>
+                    </div>
+                    <!-- Printing & Secretarial -->
+                    <div class="service-card reveal">
+                        <div class="icon"><i class="fas fa-print"></i></div>
+                        <h3>Printing &amp; Secretarial</h3>
+                        <p>Business cards, banners, photocopying, typing, scanning, and binding.</p>
+                        <a href="services.html" class="learn-more">Learn More →</a>
+                    </div>
+                </div>
+
+                <div style="text-align:center; margin-top:2rem;">
+                    <a href="services.html" class="btn btn-outline">View All Services <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== RECENT PROJECTS ========== -->
+        <section class="section-bg recent-projects" style="padding:60px 0;">
+            <div class="container">
+                <div class="text-center reveal">
+                    <span class="section-tag">Our Work</span>
+                    <h2 class="section-title">Recent Projects</h2>
+                    <p class="section-subtitle">Some of our best work across website design, branding, photography, and more.</p>
+                </div>
+
+                <div class="project-grid reveal">
+                    <div class="project-item">
+                        <img src="images/websites/seeta university.jfif" alt="Website Design" loading="lazy" onerror="this.parentElement.innerHTML='<i class=\'fas fa-desktop\'></i>';" />
+                        <div class="project-overlay">
+                            <h5>Seeta University Website</h5>
+                            <p>Educational website with student portal</p>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <img src="images/branding/full branding suite.png" alt="Branding" loading="lazy" onerror="this.parentElement.innerHTML='<i class=\'fas fa-palette\'></i>';" />
+                        <div class="project-overlay">
+                            <h5>Complete Brand Identity</h5>
+                            <p>Logo, stationery &amp; style guide</p>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <img src="images/logos/Pole Power Supply Logo 2.png" alt="Logo Design" loading="lazy" onerror="this.parentElement.innerHTML='<i class=\'fas fa-tag\'></i>';" />
+                        <div class="project-overlay">
+                            <h5>Creative Logo Design</h5>
+                            <p>Professional logo for a power company</p>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <img src="images/posters/Mrs Florence Birthday.png" alt="Poster Design" loading="lazy" onerror="this.parentElement.innerHTML='<i class=\'fas fa-image\'></i>';" />
+                        <div class="project-overlay">
+                            <h5>Birthday Poster Design</h5>
+                            <p>Custom event poster with vibrant design</p>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <img src="images/printing/Business card mockup.png" alt="Business Cards" loading="lazy" onerror="this.parentElement.innerHTML='<i class=\'fas fa-id-card\'></i>';" />
+                        <div class="project-overlay">
+                            <h5>Premium Business Cards</h5>
+                            <p>High-quality business cards with UV finish</p>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <img src="images/videography/thumbnails/natasha.png" alt="Videography" loading="lazy" onerror="this.parentElement.innerHTML='<i class=\'fas fa-video\'></i>';" />
+                        <div class="project-overlay">
+                            <h5>Wedding Cinematography</h5>
+                            <p>Beautiful introduction ceremony coverage</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align:center; margin-top:1.5rem;">
+                    <a href="portfolio.html" class="view-all-btn">View Full Portfolio <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== WHY CHOOSE US ========== -->
+        <section style="padding:60px 0;">
+            <div class="container">
+                <div class="text-center reveal">
+                    <span class="section-tag">Why Victor Tech</span>
+                    <h2 class="section-title">Why Choose Us</h2>
+                    <p class="section-subtitle">We combine technical expertise with creative passion to deliver outstanding results.</p>
+                </div>
+
+                <div class="why-grid reveal">
+                    <div class="why-item"><div class="icon"><i class="fas fa-users"></i></div><h4>Experienced Team</h4><p>Skilled professionals dedicated to your success.</p></div>
+                    <div class="why-item"><div class="icon"><i class="fas fa-tags"></i></div><h4>Affordable Pricing</h4><p>Quality services at competitive rates.</p></div>
+                    <div class="why-item"><div class="icon"><i class="fas fa-bolt"></i></div><h4>Fast Delivery</h4><p>Timely execution without compromising quality.</p></div>
+                    <div class="why-item"><div class="icon"><i class="fas fa-star"></i></div><h4>High Quality Work</h4><p>Attention to detail in every project.</p></div>
+                    <div class="why-item"><div class="icon"><i class="fas fa-smile"></i></div><h4>Customer Satisfaction</h4><p>Your happiness is our priority.</p></div>
+                    <div class="why-item"><div class="icon"><i class="fas fa-headset"></i></div><h4>24/7 Support</h4><p>We're here whenever you need us.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== OUR PROCESS ========== -->
+        <section class="section-bg" style="padding:60px 0;">
+            <div class="container">
+                <div class="text-center reveal">
+                    <span class="section-tag">How We Work</span>
+                    <h2 class="section-title">Our Process</h2>
+                    <p class="section-subtitle">A simple, transparent process designed to deliver exceptional results.</p>
+                </div>
+
+                <div class="process-grid reveal">
+                    <div class="process-item">
+                        <div class="step-number">1</div>
+                        <h4>Consultation</h4>
+                        <p>We understand your needs and goals.</p>
+                        <div class="arrow"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                    <div class="process-item">
+                        <div class="step-number">2</div>
+                        <h4>Planning</h4>
+                        <p>We create a detailed project roadmap.</p>
+                        <div class="arrow"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                    <div class="process-item">
+                        <div class="step-number">3</div>
+                        <h4>Design &amp; Development</h4>
+                        <p>We bring your vision to life.</p>
+                        <div class="arrow"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                    <div class="process-item">
+                        <div class="step-number">4</div>
+                        <h4>Delivery</h4>
+                        <p>We present the final product.</p>
+                        <div class="arrow"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                    <div class="process-item">
+                        <div class="step-number">5</div>
+                        <h4>Support</h4>
+                        <p>We're here for you after launch.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== TESTIMONIALS PREVIEW ========== -->
+        <section style="padding:60px 0;">
+            <div class="container">
+                <div class="text-center reveal">
+                    <span class="section-tag">Testimonials</span>
+                    <h2 class="section-title">What Our Clients Say</h2>
+                    <p class="section-subtitle">Real feedback from real clients who have worked with us.</p>
+                </div>
+
+                <div class="testimonials-preview reveal">
+                    <div class="testimonial-card">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <blockquote>"Victor Tech transformed our school's online presence. The website is stunning and our enrollment has increased significantly!"</blockquote>
+                        <div class="client">
+                            <div class="avatar">SN</div>
+                            <div class="info">
+                                <h4>Sarah Nambi</h4>
+                                <span>CEO, BrightFuture Schools</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <blockquote>"The branding and photography services from Victor Tech are exceptional. They captured our brand identity perfectly."</blockquote>
+                        <div class="client">
+                            <div class="avatar">JM</div>
+                            <div class="info">
+                                <h4>John Muwonge</h4>
+                                <span>Founder, JMS Enterprises</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <blockquote>"Reliable, creative, and professional. Victor Tech is our go-to partner for all technology and creative needs."</blockquote>
+                        <div class="client">
+                            <div class="avatar">RS</div>
+                            <div class="info">
+                                <h4>Robert Sseguya</h4>
+                                <span>Manager, Seeta University</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align:center; margin-top:1.5rem;">
+                    <a href="testimonials.html" class="btn btn-outline">View All Testimonials <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== CALL TO ACTION ========== -->
+        <div class="container">
+            <div class="home-cta reveal">
+                <h2>Ready to Grow Your Business?</h2>
+                <p>Let's build something amazing together. Get in touch with us today.</p>
+                <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+                    <a href="contact.html" class="btn btn-white"><i class="fas fa-rocket"></i> Get Started</a>
+                    <a href="https://wa.me/256766783991" target="_blank" class="btn btn-outline-white"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== FOOTER ========== -->
+        <footer>
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a href="index.html" class="logo">
+                            <div class="logo-icon"><img src="images/logo/logo.png" alt="Victor Tech official logo" /></div>
+                            <div class="logo-text"><span class="main">VICTOR<span>TECH</span></span><span class="tag">Designing Solutions, Capturing Moments</span></div>
+                        </a>
+                        <p>Designing Solutions, Capturing Moments, Delivering Excellence.</p>
+                        <div class="socials">
+                            <a href="https://facebook.com/victortech.ug" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://instagram.com/victortech.ug" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://twitter.com/victortechug" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.youtube.com/@victortech-ug" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            <a href="https://linkedin.com/company/victortech" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-services">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="services.html">Technology</a></li>
+                            <li><a href="services.html">Graphics Design</a></li>
+                            <li><a href="services.html">Photography</a></li>
+                            <li><a href="services.html">Videography</a></li>
+                            <li><a href="services.html">Secretarial</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-newsletter">
+                        <h4>Newsletter</h4>
+                        <p>Subscribe for updates, tips, and exclusive offers.</p>
+                        <form class="newsletter-form" id="newsletterForm">
+                            <input type="email" placeholder="Your email address" required aria-label="Email for newsletter" />
+                            <button type="submit"><i class="fas fa-arrow-right"></i> Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    &copy; 2026 <strong>VICTOR TECH</strong>. All Rights Reserved. &mdash; Mbalala-Mukono, Uganda.<br />
+                    <span style="font-size:0.8rem; opacity:0.5;">Designed &amp; Developed by Victor Tech</span>
+                </div>
+            </div>
+        </footer>
+
+        <!-- ========== FLOATING WHATSAPP ========== -->
+        <a href="https://wa.me/256766783991" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <!-- ========== CHAT WIDGET ========== -->
+        <button class="chat-toggle-home" id="chatToggleHome" aria-label="Open chat">
+            <i class="fas fa-comment-dots"></i>
+            <span class="badge">1</span>
+        </button>
+        <div class="chat-widget-home" id="chatWidgetHome">
+            <div class="chat-header">
+                <div class="avatar">VT</div>
+                <div>
+                    <h5>Victor Tech</h5>
+                    <div class="status"><i class="fas fa-circle" style="font-size:0.5rem;"></i> Online</div>
+                </div>
+            </div>
+            <div class="chat-message">
+                👋 Hi! How can Victor Tech help you today?
+            </div>
+            <div class="chat-actions">
+                <a href="https://wa.me/256766783991" target="_blank" class="wa-btn"><i class="fab fa-whatsapp"></i> Chat</a>
+                <button class="close-btn" id="chatCloseHome">Close</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ========== EXTERNAL JS ========== -->
+    <script src="script.js"></script>
+
+    <!-- ========== HOME PAGE SPECIFIC JS ========== -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+
+  
+            
+
+            // ===== HAMBURGER MENU =====
+            const hamburger = document.getElementById('hamburger');
+            const navMenu = document.getElementById('navMenu');
+            if (hamburger && navMenu) {
+                hamburger.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    navMenu.classList.toggle('open');
+                    hamburger.classList.toggle('active');
+                    const expanded = hamburger.getAttribute('aria-expanded') === 'true' ? 'false' : 'true';
+                    hamburger.setAttribute('aria-expanded', expanded);
+                });
+
+                // Close menu when a link is clicked
+                navMenu.querySelectorAll('a').forEach(function(link) {
+                    link.addEventListener('click', function() {
+                        navMenu.classList.remove('open');
+                        hamburger.classList.remove('active');
+                        hamburger.setAttribute('aria-expanded', 'false');
+                    });
+                });
+
+                // Close menu when clicking outside
+                document.addEventListener('click', function(e) {
+                    if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+                        navMenu.classList.remove('open');
+                        hamburger.classList.remove('active');
+                        hamburger.setAttribute('aria-expanded', 'false');
+                    }
+                });
+
+                // Close menu on escape key
+                document.addEventListener('keydown', function(e) {
+                    if (e.key === 'Escape' && navMenu.classList.contains('open')) {
+                        navMenu.classList.remove('open');
+                        hamburger.classList.remove('active');
+                        hamburger.setAttribute('aria-expanded', 'false');
+                    }
+                });
+            }
+
+            // ===== STICKY HEADER =====
+            const header = document.getElementById('header');
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 30) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+
+            // ===== ANIMATED COUNTERS =====
+            const counters = document.querySelectorAll('.hero-stats .stat-number');
+            let countersAnimated = false;
+
+            function animateCounters() {
+                if (countersAnimated) return;
+                const trigger = document.querySelector('.hero-stats');
+                if (!trigger) return;
+                const rect = trigger.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 80) {
+                    countersAnimated = true;
+                    counters.forEach(function(counter) {
+                        const target = parseInt(counter.getAttribute('data-count') || '0');
+                        let current = 0;
+                        const increment = Math.ceil(target / 60);
+                        const interval = setInterval(function() {
+                            current += increment;
+                            if (current >= target) {
+                                current = target;
+                                clearInterval(interval);
+                            }
+                            counter.textContent = current;
+                            if (target === 98) counter.textContent = current + '%';
+                        }, 30);
+                    });
+                }
+            }
+
+            window.addEventListener('scroll', animateCounters);
+            window.addEventListener('load', animateCounters);
+            setTimeout(animateCounters, 500);
+
+            // ===== SCROLL REVEAL (Intersection Observer) =====
+            const revealElements = document.querySelectorAll('.reveal');
+            if ('IntersectionObserver' in window) {
+                const observer = new IntersectionObserver(function(entries) {
+                    entries.forEach(function(entry) {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+                revealElements.forEach(function(el) { observer.observe(el); });
+            }
+
+            // ===== NEWSLETTER =====
+            const newsletterForm = document.getElementById('newsletterForm');
+            if (newsletterForm) {
+                newsletterForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const input = this.querySelector('input');
+                    const btn = this.querySelector('button');
+                    const original = btn.innerHTML;
+                    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
+                    setTimeout(function() {
+                        btn.innerHTML = '<i class="fas fa-check"></i> Done!';
+                        input.value = '';
+                        setTimeout(function() { btn.innerHTML = original; }, 2000);
+                    }, 1000);
+                });
+            }
+
+            // ===== CHAT WIDGET =====
+            const chatToggle = document.getElementById('chatToggleHome');
+            const chatWidget = document.getElementById('chatWidgetHome');
+            const chatClose = document.getElementById('chatCloseHome');
+
+            if (chatToggle && chatWidget) {
+                chatToggle.addEventListener('click', function() {
+                    chatWidget.classList.toggle('open');
+                });
+                if (chatClose) {
+                    chatClose.addEventListener('click', function() {
+                        chatWidget.classList.remove('open');
+                    });
+                }
+                document.addEventListener('click', function(e) {
+                    if (!chatWidget.contains(e.target) && !chatToggle.contains(e.target)) {
+                        chatWidget.classList.remove('open');
+                    }
+                });
+            }
+
+        });
+    </script>
+
+</body>
+</html>

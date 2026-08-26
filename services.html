@@ -1,0 +1,2284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ========== SEO META TAGS ========== -->
+    <title>Victor Tech Services | Website Design, Branding, Photography & Printing in Uganda</title>
+    <meta name="description" content="Victor Tech offers website development, graphic design, branding, photography, videography, printing, software installation and secretarial services in Uganda." />
+    <meta name="keywords" content="Website Design Uganda, Graphic Design, Photography, Printing, Branding, Victor Tech, Videography, Software Installation" />
+    <meta name="author" content="Victor Tech" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- ========== OPEN GRAPH / SOCIAL META ========== -->
+    <meta property="og:title" content="Victor Tech Services | Technology, Branding & Creative Solutions" />
+    <meta property="og:description" content="Professional website design, branding, photography, videography, printing and secretarial services in Uganda." />
+    <meta property="og:image" content="images/logo/logo.png" />
+    <meta property="og:url" content="https://victortech.ug/services.html" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- ========== FAVICON ========== -->
+    <link rel="icon" type="image/png" href="images/logo/logo.png" />
+    <link rel="apple-touch-icon" href="images/logo/logo.png" />
+
+    <!-- ========== JSON-LD STRUCTURED DATA ========== -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "provider": {
+            "@type": "Organization",
+            "name": "Victor Tech",
+            "url": "https://victortech.ug",
+            "telephone": "+256766783991",
+            "email": "victortech49@gmail.com"
+        },
+        "serviceType": "Website Design, Branding, Photography, Videography, Graphics Design, Printing, Secretarial Services, Software Installation",
+        "description": "Victor Tech provides professional technology and creative services in Uganda.",
+        "areaServed": "Uganda",
+        "availableLanguage": ["English"]
+    }
+    </script>
+
+    <!-- ========== GOOGLE FONTS ========== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- ========== FONT AWESOME ========== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- ========== STYLES ========== -->
+    <style>
+        /* ============================================================
+           VICTOR TECH — PREMIUM SERVICES PAGE
+           Brand Colors: Maroon #8E1C1C | Orange #E4A83B
+           ============================================================ */
+
+        /* ===== CSS VARIABLES ===== */
+        :root {
+            --maroon: #8E1C1C;
+            --maroon-dark: #6a1515;
+            --maroon-light: #b02424;
+            --orange: #E4A83B;
+            --orange-light: #f0c45a;
+            --orange-dark: #c9912e;
+            --white: #FFFFFF;
+            --off-white: #f8f6f4;
+            --gray-100: #f1f0ee;
+            --gray-200: #e0ddd9;
+            --gray-300: #c5c0ba;
+            --gray-400: #a09991;
+            --gray-500: #7a7268;
+            --gray-600: #5a534a;
+            --gray-700: #3d3730;
+            --gray-800: #2a2520;
+            --gray-900: #1a1714;
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+            --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.10);
+            --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.15);
+            --shadow-xl: 0 30px 80px rgba(0, 0, 0, 0.20);
+            --radius: 16px;
+            --radius-sm: 8px;
+            --transition: 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --font-primary: 'Poppins', sans-serif;
+            --font-secondary: 'Montserrat', sans-serif;
+            --font-body: 'Inter', sans-serif;
+        }
+
+        /* Dark Mode */
+        [data-theme="dark"] {
+            --white: #1a1714;
+            --off-white: #221f1b;
+            --gray-100: #2a2520;
+            --gray-200: #3d3730;
+            --gray-300: #5a534a;
+            --gray-400: #7a7268;
+            --gray-500: #a09991;
+            --gray-600: #c5c0ba;
+            --gray-700: #e0ddd9;
+            --gray-800: #f1f0ee;
+            --gray-900: #f8f6f4;
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.30);
+            --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.40);
+            --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.50);
+            --shadow-xl: 0 30px 80px rgba(0, 0, 0, 0.60);
+        }
+
+        /* ===== RESET & BASE ===== */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--off-white);
+            color: var(--gray-800);
+            line-height: 1.7;
+            transition: background-color 0.4s, color 0.4s;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        ul {
+            list-style: none;
+        }
+        .container {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ===== TYPOGRAPHY ===== */
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: var(--font-secondary);
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--gray-900);
+        }
+        h1 {
+            font-size: clamp(2.4rem, 6vw, 4.2rem);
+            font-weight: 800;
+        }
+        h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        h3 {
+            font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+        }
+        .section-tag {
+            display: inline-block;
+            font-family: var(--font-primary);
+            font-weight: 600;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--maroon);
+            background: rgba(142, 28, 28, 0.10);
+            padding: 0.3rem 1.2rem;
+            border-radius: 50px;
+            margin-bottom: 0.75rem;
+        }
+        .section-title {
+            margin-bottom: 0.5rem;
+        }
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--gray-500);
+            max-width: 640px;
+            margin-bottom: 2.5rem;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .text-center .section-subtitle {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* ===== BUTTONS ===== */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.6rem;
+            font-family: var(--font-primary);
+            font-weight: 600;
+            font-size: 0.95rem;
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+            text-align: center;
+            white-space: nowrap;
+        }
+        .btn-primary {
+            background: var(--maroon);
+            color: var(--white);
+            box-shadow: 0 4px 16px rgba(142, 28, 28, 0.30);
+        }
+        .btn-primary:hover {
+            background: var(--maroon-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(142, 28, 28, 0.40);
+        }
+        .btn-secondary {
+            background: var(--orange);
+            color: var(--gray-900);
+            box-shadow: 0 4px 16px rgba(228, 168, 59, 0.30);
+        }
+        .btn-secondary:hover {
+            background: var(--orange-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(228, 168, 59, 0.40);
+        }
+        .btn-outline {
+            background: transparent;
+            color: var(--maroon);
+            border: 2px solid var(--maroon);
+        }
+        .btn-outline:hover {
+            background: var(--maroon);
+            color: var(--white);
+            transform: translateY(-3px);
+        }
+        .btn-white {
+            background: var(--white);
+            color: var(--maroon);
+            box-shadow: var(--shadow-md);
+        }
+        .btn-white:hover {
+            background: var(--off-white);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+        }
+        .btn-sm {
+            padding: 0.5rem 1.4rem;
+            font-size: 0.85rem;
+        }
+
+        /* ============================================================
+           HEADER — FIXED
+           ============================================================ */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 0.6rem 0;
+            transition: var(--transition);
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+        }
+        [data-theme="dark"] header {
+            background: rgba(26, 23, 20, 0.88);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+        }
+        header.scrolled {
+            box-shadow: var(--shadow-md);
+            padding: 0.3rem 0;
+        }
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 0.5rem 1rem;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-family: var(--font-secondary);
+            font-weight: 800;
+            font-size: 1.5rem;
+            color: var(--maroon);
+            flex-shrink: 0;
+        }
+        .logo .logo-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--maroon);
+            color: var(--white);
+            width: 42px;
+            height: 42px;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            font-weight: 900;
+            letter-spacing: -1px;
+            position: relative;
+            overflow: hidden;
+        }
+        .logo .logo-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            padding: 4px;
+        }
+        .logo .logo-icon::after {
+            content: '';
+            position: absolute;
+            top: -4px;
+            right: -4px;
+            width: 16px;
+            height: 16px;
+            background: var(--orange);
+            border-radius: 50%;
+            border: 2px solid var(--white);
+        }
+        .logo .logo-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1;
+        }
+        .logo .logo-text .main {
+            font-size: 1.5rem;
+            letter-spacing: -0.5px;
+        }
+        .logo .logo-text .main span {
+            color: var(--orange);
+        }
+        .logo .logo-text .tag {
+            font-size: 0.55rem;
+            font-weight: 400;
+            letter-spacing: 0.8px;
+            color: var(--gray-500);
+            font-family: var(--font-body);
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 0.2rem 0.8rem;
+            flex-wrap: wrap;
+        }
+        .nav-menu a {
+            font-family: var(--font-primary);
+            font-weight: 500;
+            font-size: 0.88rem;
+            padding: 0.4rem 0.8rem;
+            border-radius: 50px;
+            color: var(--gray-700);
+            transition: var(--transition);
+            position: relative;
+        }
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: 2px;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: var(--maroon);
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+        .nav-menu a:hover::after,
+        .nav-menu a.active::after {
+            width: 60%;
+        }
+        .nav-menu a:hover,
+        .nav-menu a.active {
+            color: var(--maroon);
+            background: rgba(142, 28, 28, 0.06);
+        }
+        [data-theme="dark"] .nav-menu a {
+            color: var(--gray-300);
+        }
+        [data-theme="dark"] .nav-menu a:hover,
+        [data-theme="dark"] .nav-menu a.active {
+            color: var(--orange-light);
+            background: rgba(228, 168, 59, 0.10);
+        }
+        [data-theme="dark"] .nav-menu a::after {
+            background: var(--orange-light);
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+        .nav-actions .btn {
+            font-size: 0.85rem;
+            padding: 0.5rem 1.4rem;
+        }
+        .theme-toggle {
+            background: var(--gray-100);
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: var(--transition);
+            color: var(--gray-700);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .theme-toggle:hover {
+            background: var(--gray-200);
+            transform: rotate(20deg);
+        }
+        [data-theme="dark"] .theme-toggle {
+            background: var(--gray-700);
+            color: var(--orange-light);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 4px;
+            flex-shrink: 0;
+        }
+        .hamburger span {
+            display: block;
+            width: 26px;
+            height: 2.5px;
+            background: var(--gray-800);
+            border-radius: 4px;
+            transition: var(--transition);
+        }
+        [data-theme="dark"] .hamburger span {
+            background: var(--gray-200);
+        }
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(6px, 6px);
+        }
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+
+        /* ============================================================
+           MOBILE NAV — FULLY FUNCTIONAL
+           ============================================================ */
+        @media (max-width: 992px) {
+            .nav-menu {
+                position: fixed;
+                top: 72px;
+                left: 0;
+                right: 0;
+                background: rgba(255, 255, 255, 0.98);
+                backdrop-filter: blur(12px);
+                flex-direction: column;
+                padding: 1.5rem 2rem;
+                gap: 0.3rem;
+                border-bottom: 1px solid var(--gray-100);
+                transform: translateY(-120%);
+                opacity: 0;
+                transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+                margin: 0;
+                align-items: stretch;
+                border-radius: 0 0 16px 16px;
+                z-index: 999;
+                pointer-events: none;
+                overflow-y: auto;
+                max-height: calc(100vh - 72px);
+            }
+            .nav-menu.open {
+                transform: translateY(0);
+                opacity: 1;
+                pointer-events: auto;
+            }
+            .nav-menu a {
+                padding: 0.7rem 1rem;
+                border-radius: 8px;
+                text-align: center;
+                font-size: 0.95rem;
+                border-bottom: 1px solid rgba(0,0,0,0.04);
+            }
+            .nav-menu a:last-child {
+                border-bottom: none;
+            }
+            .hamburger {
+                display: flex;
+            }
+            [data-theme="dark"] .nav-menu {
+                background: rgba(18, 16, 14, 0.98);
+                border-bottom-color: rgba(255, 255, 255, 0.06);
+            }
+            [data-theme="dark"] .nav-menu a {
+                border-bottom-color: rgba(255,255,255,0.04);
+            }
+            .nav-actions .btn {
+                font-size: 0.8rem;
+                padding: 0.4rem 1rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .nav-actions .btn {
+                display: none;
+            }
+            .logo-text .tag {
+                display: none;
+            }
+            .logo-text .main {
+                font-size: 0.95rem;
+            }
+            .nav-menu {
+                padding: 1rem 1.2rem;
+            }
+            .nav-menu a {
+                font-size: 0.9rem;
+                padding: 0.6rem 0.8rem;
+            }
+        }
+
+        /* ============================================================
+           HERO BANNER (Services Page)
+           ============================================================ */
+        .services-hero {
+            padding: 160px 0 80px;
+            background: linear-gradient(165deg, var(--off-white) 0%, var(--white) 100%);
+            position: relative;
+            overflow: hidden;
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+        }
+        [data-theme="dark"] .services-hero {
+            background: linear-gradient(165deg, #1a1714 0%, #221f1b 100%);
+        }
+        .services-hero .floating-shapes {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            overflow: hidden;
+        }
+        .services-hero .floating-shapes .shape {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.06;
+            background: var(--maroon);
+        }
+        .services-hero .floating-shapes .shape:nth-child(1) {
+            width: 200px;
+            height: 200px;
+            top: -60px;
+            right: -40px;
+        }
+        .services-hero .floating-shapes .shape:nth-child(2) {
+            width: 140px;
+            height: 140px;
+            bottom: -40px;
+            left: -30px;
+            background: var(--orange);
+        }
+        .services-hero .floating-shapes .shape:nth-child(3) {
+            width: 80px;
+            height: 80px;
+            top: 40%;
+            right: 10%;
+            background: var(--orange);
+            opacity: 0.05;
+        }
+        .services-hero .container {
+            position: relative;
+            z-index: 2;
+        }
+        .services-hero .hero-content {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            max-width: 700px;
+        }
+        .services-hero .hero-content .hero-tag {
+            display: inline-block;
+            background: rgba(142, 28, 28, 0.08);
+            color: var(--maroon);
+            padding: 0.2rem 1.2rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            width: fit-content;
+        }
+        .services-hero .hero-content h1 {
+            color: var(--gray-900);
+            font-size: clamp(2.6rem, 5vw, 4rem);
+        }
+        .services-hero .hero-content h1 .highlight {
+            color: var(--maroon);
+            position: relative;
+        }
+        .services-hero .hero-content h1 .highlight::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 6px;
+            background: var(--orange);
+            opacity: 0.4;
+            border-radius: 4px;
+        }
+        .services-hero .hero-content p {
+            font-size: 1.15rem;
+            color: var(--gray-500);
+            max-width: 540px;
+        }
+        .services-hero .hero-content .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }
+        .services-hero .hero-content .hero-stats {
+            display: flex;
+            gap: 2.5rem;
+            margin-top: 0.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--gray-200);
+        }
+        .services-hero .hero-content .hero-stats .stat {
+            display: flex;
+            flex-direction: column;
+        }
+        .services-hero .hero-content .hero-stats .stat .number {
+            font-family: var(--font-secondary);
+            font-weight: 800;
+            font-size: 1.8rem;
+            color: var(--maroon);
+        }
+        .services-hero .hero-content .hero-stats .stat .label {
+            font-size: 0.85rem;
+            color: var(--gray-500);
+        }
+
+        /* ============================================================
+           SERVICES GRID
+           ============================================================ */
+        .services-section {
+            padding: 60px 0;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        .service-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 2rem 1.8rem;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--gray-100);
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        [data-theme="dark"] .service-card {
+            background: #2a2520;
+            border-color: #3d3730;
+        }
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--maroon), var(--orange));
+            opacity: 0;
+            transition: all 0.5s ease;
+        }
+        .service-card:hover::before {
+            opacity: 1;
+        }
+        .service-card:hover {
+            transform: translateY(-10px) scale(1.01);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--maroon);
+        }
+        .service-card .card-top {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        .service-card .card-top .service-icon {
+            flex-shrink: 0;
+            width: 60px;
+            height: 60px;
+            background: rgba(142, 28, 28, 0.06);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: var(--maroon);
+            transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .service-card:hover .card-top .service-icon {
+            background: var(--maroon);
+            color: var(--white);
+            transform: scale(1.05) rotate(-5deg);
+        }
+        [data-theme="dark"] .service-card .card-top .service-icon {
+            background: rgba(228, 168, 59, 0.10);
+            color: var(--orange-light);
+        }
+        [data-theme="dark"] .service-card:hover .card-top .service-icon {
+            background: var(--maroon);
+            color: var(--white);
+        }
+        .service-card .card-top .service-info h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.1rem;
+        }
+        .service-card .card-top .service-info .service-tag {
+            display: inline-block;
+            font-size: 0.6rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 0.05rem 0.7rem;
+            border-radius: 50px;
+            background: var(--orange);
+            color: var(--gray-900);
+        }
+        .service-card .card-top .service-info .service-tag.popular {
+            background: #4CAF50;
+            color: var(--white);
+        }
+        .service-card .card-top .service-info .service-tag.premium {
+            background: #2196F3;
+            color: var(--white);
+        }
+        .service-card .service-image {
+            width: 100%;
+            height: 150px;
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+            background: var(--gray-100);
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: var(--gray-400);
+        }
+        .service-card .service-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .service-card .service-image .fallback-icon {
+            font-size: 3rem;
+            color: var(--gray-400);
+        }
+        .service-card p {
+            font-size: 0.95rem;
+            color: var(--gray-500);
+            margin-bottom: 0.8rem;
+            line-height: 1.6;
+        }
+        .service-card .service-details {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem 1.5rem;
+            margin-bottom: 0.8rem;
+            font-size: 0.85rem;
+            color: var(--gray-500);
+        }
+        .service-card .service-details span {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+        .service-card .service-details span i {
+            color: var(--orange);
+            font-size: 0.8rem;
+        }
+        .service-card .service-subgrid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 0.5rem;
+            margin: 0.8rem 0;
+        }
+        .service-card .service-subgrid .sub-item {
+            background: var(--off-white);
+            padding: 0.3rem 0.6rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: var(--gray-600);
+            text-align: center;
+            transition: var(--transition);
+            border: 1px solid transparent;
+        }
+        [data-theme="dark"] .service-card .service-subgrid .sub-item {
+            background: #3d3730;
+            color: var(--gray-300);
+        }
+        .service-card .service-subgrid .sub-item:hover {
+            background: var(--maroon);
+            color: var(--white);
+            border-color: var(--maroon);
+            transform: scale(1.04);
+        }
+        .service-card .tech-tools {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.3rem;
+            margin: 0.5rem 0 0.8rem;
+        }
+        .service-card .tech-tools .tool {
+            font-size: 0.6rem;
+            padding: 0.1rem 0.6rem;
+            border-radius: 50px;
+            background: var(--off-white);
+            color: var(--gray-500);
+            border: 1px solid var(--gray-200);
+            font-weight: 500;
+        }
+        [data-theme="dark"] .service-card .tech-tools .tool {
+            background: #3d3730;
+            border-color: #3d3730;
+            color: var(--gray-300);
+        }
+        .service-card .service-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+            padding-top: 0.8rem;
+            border-top: 1px solid var(--gray-200);
+        }
+        [data-theme="dark"] .service-card .service-footer {
+            border-color: #3d3730;
+        }
+        .service-card .service-footer .price {
+            font-family: var(--font-secondary);
+            font-weight: 700;
+            color: var(--maroon);
+            font-size: 1.1rem;
+        }
+        [data-theme="dark"] .service-card .service-footer .price {
+            color: var(--orange-light);
+        }
+        .service-card .service-footer .price span {
+            font-weight: 400;
+            font-size: 0.7rem;
+            color: var(--gray-500);
+        }
+        .service-card .service-footer .learn-more {
+            color: var(--maroon);
+            font-weight: 600;
+            font-size: 0.85rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            transition: var(--transition);
+        }
+        .service-card .service-footer .learn-more:hover {
+            color: var(--orange);
+            gap: 0.6rem;
+        }
+
+        /* ============================================================
+           WHY CHOOSE US
+           ============================================================ */
+        .why-section {
+            padding: 60px 0;
+            background: var(--white);
+        }
+        [data-theme="dark"] .why-section {
+            background: #1a1714;
+        }
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+        .why-item {
+            text-align: center;
+            padding: 1.8rem 1.2rem;
+            background: var(--off-white);
+            border-radius: var(--radius);
+            transition: var(--transition);
+            border: 1px solid var(--gray-100);
+        }
+        [data-theme="dark"] .why-item {
+            background: #2a2520;
+            border-color: #3d3730;
+        }
+        .why-item:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--orange);
+        }
+        .why-item .icon {
+            font-size: 2.6rem;
+            color: var(--orange);
+            margin-bottom: 0.8rem;
+        }
+        .why-item h4 {
+            font-size: 1.05rem;
+            margin-bottom: 0.3rem;
+        }
+        .why-item p {
+            font-size: 0.9rem;
+            color: var(--gray-500);
+        }
+
+        /* ============================================================
+           PROCESS SECTION
+           ============================================================ */
+        .process-section {
+            padding: 60px 0;
+        }
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .process-step {
+            text-align: center;
+            padding: 1.5rem 1rem;
+            background: var(--white);
+            border-radius: var(--radius);
+            border: 1px solid var(--gray-100);
+            transition: var(--transition);
+            position: relative;
+        }
+        [data-theme="dark"] .process-step {
+            background: #2a2520;
+            border-color: #3d3730;
+        }
+        .process-step:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--orange);
+        }
+        .process-step .step-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            background: var(--maroon);
+            color: var(--white);
+            border-radius: 50%;
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: 0.8rem;
+        }
+        .process-step h4 {
+            font-size: 0.95rem;
+            margin-bottom: 0.2rem;
+        }
+        .process-step p {
+            font-size: 0.8rem;
+            color: var(--gray-500);
+        }
+        .process-step .arrow {
+            position: absolute;
+            right: -1.2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.5rem;
+            color: var(--orange);
+        }
+        .process-step:last-child .arrow {
+            display: none;
+        }
+
+        /* ============================================================
+           TESTIMONIALS
+           ============================================================ */
+        .testimonials-section {
+            padding: 60px 0;
+            background: var(--white);
+        }
+        [data-theme="dark"] .testimonials-section {
+            background: #1a1714;
+        }
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+        .testimonial-item {
+            background: var(--off-white);
+            padding: 1.5rem;
+            border-radius: var(--radius);
+            border: 1px solid var(--gray-100);
+            transition: var(--transition);
+        }
+        [data-theme="dark"] .testimonial-item {
+            background: #2a2520;
+            border-color: #3d3730;
+        }
+        .testimonial-item:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+        .testimonial-item .stars {
+            color: var(--orange);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+        .testimonial-item blockquote {
+            font-size: 0.95rem;
+            color: var(--gray-600);
+            font-style: italic;
+            line-height: 1.6;
+            margin-bottom: 0.5rem;
+        }
+        .testimonial-item .client {
+            font-weight: 600;
+            color: var(--maroon);
+            font-size: 0.85rem;
+        }
+        .testimonial-item .client-role {
+            font-size: 0.75rem;
+            color: var(--gray-400);
+            font-weight: 400;
+        }
+
+        /* ============================================================
+           FAQ SECTION
+           ============================================================ */
+        .faq-section {
+            padding: 60px 0;
+        }
+        .faq-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .faq-item {
+            padding: 1rem 1.2rem;
+            background: var(--white);
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--gray-200);
+            transition: var(--transition);
+            cursor: pointer;
+        }
+        [data-theme="dark"] .faq-item {
+            background: #2a2520;
+            border-color: #3d3730;
+        }
+        .faq-item:hover {
+            border-color: var(--orange);
+        }
+        .faq-item .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: var(--gray-800);
+        }
+        [data-theme="dark"] .faq-item .faq-question {
+            color: var(--gray-200);
+        }
+        .faq-item .faq-question i {
+            color: var(--orange);
+            transition: var(--transition);
+        }
+        .faq-item .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.4s ease;
+            color: var(--gray-500);
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        [data-theme="dark"] .faq-item .faq-answer {
+            color: var(--gray-400);
+        }
+        .faq-item.open .faq-answer {
+            max-height: 300px;
+            padding-top: 0.8rem;
+        }
+        .faq-item.open .faq-question i {
+            transform: rotate(180deg);
+        }
+
+        /* ============================================================
+           CTA SECTION
+           ============================================================ */
+        .cta-section {
+            padding: 60px 0;
+            background: linear-gradient(135deg, var(--maroon), var(--maroon-dark));
+            color: var(--white);
+            text-align: center;
+        }
+        .cta-section h2 {
+            color: var(--white);
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+        .cta-section p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto 1.5rem;
+        }
+        .cta-section .btn-white {
+            background: var(--white);
+            color: var(--maroon);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+        }
+        .cta-section .btn-white:hover {
+            background: var(--off-white);
+            transform: translateY(-3px);
+        }
+        .cta-section .btn-outline-white {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+        .cta-section .btn-outline-white:hover {
+            background: var(--white);
+            color: var(--maroon);
+            transform: translateY(-3px);
+        }
+
+        /* ============================================================
+           FOOTER
+           ============================================================ */
+        footer {
+            background: var(--gray-900);
+            color: rgba(255, 255, 255, 0.8);
+            padding: 3rem 0 1.5rem;
+            margin-top: 2rem;
+        }
+        [data-theme="dark"] footer {
+            background: #0d0b09;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1.2fr 1.2fr 2.2fr;
+            gap: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-brand p {
+            font-size: 0.9rem;
+            opacity: 0.7;
+            max-width: 300px;
+            margin: 0.5rem 0;
+        }
+        .footer-brand .socials {
+            display: flex;
+            gap: 0.6rem;
+            margin-top: 0.5rem;
+        }
+        .footer-brand .socials a {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.06);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            transition: var(--transition);
+        }
+        .footer-brand .socials a:hover {
+            background: var(--maroon);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+        .footer-brand .logo .logo-text .main {
+            color: var(--white);
+        }
+        .footer-brand .logo .logo-text .main span {
+            color: var(--orange);
+        }
+        [data-theme="dark"] .footer-brand .logo .logo-text .main {
+            color: var(--maroon);
+        }
+        [data-theme="dark"] .footer-brand .logo .logo-text .main span {
+            color: var(--orange);
+        }
+
+        .footer-links h4,
+        .footer-services h4 {
+            color: var(--white);
+            font-size: 0.95rem;
+            margin-bottom: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        .footer-links ul,
+        .footer-services ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.3rem;
+        }
+        .footer-links ul li a,
+        .footer-services ul li a {
+            font-size: 0.85rem;
+            opacity: 0.7;
+            transition: var(--transition);
+            padding: 0.1rem 0;
+            display: inline-block;
+        }
+        .footer-links ul li a:hover,
+        .footer-services ul li a:hover {
+            opacity: 1;
+            color: var(--orange);
+            transform: translateX(3px);
+        }
+
+        .footer-right {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+
+        .footer-newsletter h4 {
+            color: var(--white);
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        .footer-newsletter p {
+            font-size: 0.85rem;
+            opacity: 0.7;
+            margin-bottom: 0.6rem;
+        }
+        .newsletter-form {
+            display: flex;
+            gap: 0.5rem;
+            max-width: 100%;
+        }
+        .newsletter-form input {
+            flex: 1;
+            padding: 0.5rem 0.8rem;
+            border-radius: 50px;
+            border: none;
+            background: rgba(255, 255, 255, 0.08);
+            color: var(--white);
+            font-family: var(--font-body);
+            font-size: 0.85rem;
+            min-width: 0;
+        }
+        .newsletter-form input::placeholder {
+            color: rgba(255, 255, 255, 0.4);
+        }
+        .newsletter-form input:focus {
+            outline: 2px solid var(--orange);
+        }
+        .newsletter-form button {
+            padding: 0.5rem 1.2rem;
+            border-radius: 50px;
+            border: none;
+            background: var(--orange);
+            color: var(--gray-900);
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 0.8rem;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        .newsletter-form button:hover {
+            background: var(--orange-light);
+            transform: scale(1.04);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            padding-top: 1.2rem;
+            text-align: center;
+            font-size: 0.8rem;
+            opacity: 0.5;
+        }
+
+        /* ============================================================
+           RESPONSIVE — FOOTER
+           ============================================================ */
+        @media (max-width: 1024px) {
+            .footer-grid {
+                grid-template-columns: 1.5fr 1fr 1fr 1.8fr;
+                gap: 2rem;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 2rem;
+            }
+            .footer-brand {
+                grid-column: 1 / -1;
+                text-align: center;
+            }
+            .footer-brand p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .footer-brand .socials {
+                justify-content: center;
+            }
+            .footer-right {
+                grid-column: 1 / -1;
+            }
+            .footer-newsletter {
+                text-align: center;
+            }
+            .footer-newsletter p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .newsletter-form {
+                max-width: 420px;
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 1.8rem 1.5rem;
+            }
+            .footer-brand {
+                grid-column: 1 / -1;
+                text-align: center;
+            }
+            .footer-brand p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .footer-brand .socials {
+                justify-content: center;
+            }
+            .footer-links h4,
+            .footer-services h4 {
+                font-size: 0.9rem;
+            }
+            .footer-links ul,
+            .footer-services ul {
+                gap: 0.15rem;
+            }
+            .footer-links ul li a,
+            .footer-services ul li a {
+                font-size: 0.8rem;
+                padding: 0.05rem 0;
+            }
+            .footer-right {
+                grid-column: 1 / -1;
+                text-align: center;
+            }
+            .footer-newsletter p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .newsletter-form {
+                max-width: 380px;
+                margin: 0 auto;
+                flex-wrap: wrap;
+            }
+            .newsletter-form button {
+                width: 100%;
+                justify-content: center;
+            }
+            .footer-bottom {
+                font-size: 0.7rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .footer-grid {
+                gap: 1.5rem 1rem;
+            }
+            .footer-links ul li a,
+            .footer-services ul li a {
+                font-size: 0.75rem;
+            }
+        }
+
+        /* ============================================================
+           WHATSAPP FLOAT
+           ============================================================ */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: #25D366;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: 0 4px 24px rgba(37, 211, 102, 0.35);
+            z-index: 999;
+            transition: var(--transition);
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.08);
+            box-shadow: 0 6px 32px rgba(37, 211, 102, 0.5);
+        }
+
+        /* ============================================================
+           RESPONSIVE — SERVICES GRID
+           ============================================================ */
+        @media (max-width: 1024px) {
+            .services-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .process-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .process-step .arrow {
+                display: none;
+            }
+            .why-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .testimonials-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .faq-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+                max-width: 500px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .process-grid {
+                grid-template-columns: 1fr 1fr;
+                max-width: 400px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .why-grid {
+                grid-template-columns: 1fr;
+                max-width: 400px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+                max-width: 400px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .services-hero .hero-content .hero-stats {
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+            .services-hero {
+                padding: 140px 0 60px;
+                min-height: auto;
+            }
+            .services-hero .hero-content {
+                text-align: center;
+                align-items: center;
+            }
+            .services-hero .hero-content p {
+                max-width: 100%;
+            }
+            .services-hero .hero-content .hero-buttons {
+                justify-content: center;
+            }
+            .services-hero .hero-content .hero-stats {
+                justify-content: center;
+            }
+            .cta-section h2 {
+                font-size: 1.6rem;
+            }
+            .service-card .service-footer {
+                flex-direction: column;
+                align-items: stretch;
+                text-align: center;
+            }
+            .service-card .service-footer .learn-more {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .services-grid {
+                max-width: 100%;
+            }
+            .process-grid {
+                grid-template-columns: 1fr;
+                max-width: 280px;
+            }
+            .service-card .card-top {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .service-card .service-details {
+                justify-content: center;
+            }
+            .service-card .service-subgrid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        /* ============================================================
+           SCROLL REVEAL
+           ============================================================ */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ============================================================
+           SCROLLBAR
+           ============================================================ */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--off-white);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--maroon);
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--maroon-dark);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ============================================================
+    HEADER
+    ============================================================ -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" aria-label="Victor Tech Home">
+                <div class="logo-icon">
+                    <img src="images/logo/logo.png" alt="Victor Tech Logo" />
+                </div>
+                <div class="logo-text">
+                    <span class="main">VICTOR<span>TECH</span></span>
+                    <span class="tag">Designing Solutions, Capturing Moments</span>
+                </div>
+            </a>
+
+            <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html" class="active">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="testimonials.html">Testimonials</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="contact.html" class="btn btn-primary btn-sm">Get Started</a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ============================================================
+    SERVICES HERO BANNER
+    ============================================================ -->
+    <section class="services-hero" id="services-hero">
+        <div class="floating-shapes">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content reveal">
+                <span class="hero-tag"><i class="fas fa-cogs"></i> Our Services</span>
+                <h1>
+                    Technology Solutions<br />
+                    <span class="highlight">Creative Design</span><br />
+                    Professional Photography
+                </h1>
+                <p>
+                    Everything your business needs under one roof. From website development and
+                    branding to photography and printing – we've got you covered.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary"><i class="fas fa-arrow-down"></i> Explore Services</a>
+                    <a href="contact.html" class="btn btn-outline"><i class="fas fa-paper-plane"></i> Request a Quote</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="number" data-count="500">0</span>
+                        <span class="label">Projects Completed</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number" data-count="300">0</span>
+                        <span class="label">Happy Clients</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number" data-count="5">0</span>
+                        <span class="label">Years Experience</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    SERVICES GRID
+    ============================================================ -->
+    <section class="services-section section-bg" id="services">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="section-tag">What We Do</span>
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Comprehensive technology and creative solutions tailored to your business needs.</p>
+            </div>
+
+            <div class="services-grid">
+
+                <!-- ===== TECHNOLOGY SERVICES ===== -->
+                <div class="service-card reveal">
+                    <div class="card-top">
+                        <div class="service-icon"><i class="fas fa-code"></i></div>
+                        <div class="service-info">
+                            <h3>Technology Services</h3>
+                            <span class="service-tag popular">Most Popular</span>
+                        </div>
+                    </div>
+                    <div class="service-image">
+                        <img src="images/services/technology.png" alt="Victor Tech Technology Services" loading="lazy" onerror="this.innerHTML='<i class=\'fas fa-laptop fallback-icon\'></i>';" />
+                    </div>
+                    <p>Innovative digital solutions to power your business and drive growth.</p>
+                    <div class="service-details">
+                        <span><i class="fas fa-clock"></i> Delivery: 3-20 days</span>
+                        <span><i class="fas fa-tag"></i> Starting at UGX 500k</span>
+                    </div>
+                    <div class="service-subgrid">
+                        <span class="sub-item">Website Designing</span>
+                        <span class="sub-item">Mobile Applications</span>
+                        <span class="sub-item">Software Installation</span>
+                        <span class="sub-item">System Designing</span>
+                        <span class="sub-item">Branding</span>
+                    </div>
+                    <div class="tech-tools">
+                        <span class="tool">HTML5</span>
+                        <span class="tool">CSS3</span>
+                        <span class="tool">JavaScript</span>
+                        <span class="tool">PHP</span>
+                        <span class="tool">MySQL</span>
+                        <span class="tool">React</span>
+                        <span class="tool">WordPress</span>
+                        <span class="tool">Flutter</span>
+                        <span class="tool">Android</span>
+                    </div>
+                    <div class="service-footer">
+                        <div class="price">UGX 500k <span>+</span></div>
+                        <a href="contact.html" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- ===== GRAPHICS DESIGN ===== -->
+                <div class="service-card reveal">
+                    <div class="card-top">
+                        <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+                        <div class="service-info">
+                            <h3>Graphics Design</h3>
+                            <span class="service-tag">Professional</span>
+                        </div>
+                    </div>
+                    <div class="service-image">
+                        <img src="images/services/graphics.png" alt="Victor Tech Graphics Design" loading="lazy" onerror="this.innerHTML='<i class=\'fas fa-palette fallback-icon\'></i>';" />
+                    </div>
+                    <p>Creative visual identities that make your brand stand out from the competition.</p>
+                    <div class="service-details">
+                        <span><i class="fas fa-clock"></i> Delivery: 1-7 days</span>
+                        <span><i class="fas fa-tag"></i> Starting at UGX 30k</span>
+                    </div>
+                    <div class="service-subgrid">
+                        <span class="sub-item">Logo Design</span>
+                        <span class="sub-item">Posters</span>
+                        <span class="sub-item">Flyers</span>
+                        <span class="sub-item">Certificates</span>
+                        <span class="sub-item">Business Cards</span>
+                        <span class="sub-item">Success Cards</span>
+                        <span class="sub-item">Invitation Cards</span>
+                        <span class="sub-item">Plastic IDs</span>
+                        <span class="sub-item">Banners</span>
+                        <span class="sub-item">Stickers</span>
+                    </div>
+                    <div class="tech-tools">
+                        <span class="tool">Photoshop</span>
+                        <span class="tool">Illustrator</span>
+                        <span class="tool">InDesign</span>
+                        <span class="tool">CorelDRAW</span>
+                        <span class="tool">Figma</span>
+                    </div>
+                    <div class="service-footer">
+                        <div class="price">UGX 30k <span>+</span></div>
+                        <a href="contact.html" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- ===== VICTOR SHOTS PROFESSIONAL ===== -->
+                <div class="service-card reveal">
+                    <div class="card-top">
+                        <div class="service-icon"><i class="fas fa-camera-retro"></i></div>
+                        <div class="service-info">
+                            <h3>Victor Shots Professional</h3>
+                            <span class="service-tag premium">Premium</span>
+                        </div>
+                    </div>
+                    <div class="service-image">
+                        <img src="images/services/victor shots.png" alt="Victor Tech Photography" loading="lazy" onerror="this.innerHTML='<i class=\'fas fa-camera fallback-icon\'></i>';" />
+                    </div>
+                    <p>Professional photography and videography for every occasion. Capturing moments that last a lifetime.</p>
+                    <div class="service-details">
+                        <span><i class="fas fa-clock"></i> Delivery: 1-14 days</span>
+                        <span><i class="fas fa-tag"></i> Starting at UGX 10k</span>
+                    </div>
+                    <div class="service-subgrid">
+                        <span class="sub-item">Photography</span>
+                        <span class="sub-item">Videography</span>
+                        <span class="sub-item">Album Printing</span>
+                        <span class="sub-item">Photo Booth</span>
+                        <span class="sub-item">Passport Photos</span>
+                        <span class="sub-item">Event Coverage</span>
+                        <span class="sub-item">Wedding Coverage</span>
+                        <span class="sub-item">Graduation Coverage</span>
+                        <span class="sub-item">Birthday Events</span>
+                        <span class="sub-item">Introduction Ceremonies</span>
+                    </div>
+                    <div class="tech-tools">
+                        <span class="tool">Canon EOS</span>
+                        <span class="tool">Sony Cinema</span>
+                        <span class="tool">Lightroom</span>
+                        <span class="tool">Photoshop</span>
+                        <span class="tool">Premiere Pro</span>
+                        <span class="tool">DaVinci Resolve</span>
+                    </div>
+                    <div class="service-footer">
+                        <div class="price">UGX 10k <span>+</span></div>
+                        <a href="contact.html" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- ===== SECRETARIAL SERVICES ===== -->
+                <div class="service-card reveal">
+                    <div class="card-top">
+                        <div class="service-icon"><i class="fas fa-print"></i></div>
+                        <div class="service-info">
+                            <h3>Secretarial Services</h3>
+                            <span class="service-tag">Fast Delivery</span>
+                        </div>
+                    </div>
+                    <div class="service-image">
+                        <img src="images/services/printing.png" alt="Victor Tech Secretarial Services" loading="lazy" onerror="this.innerHTML='<i class=\'fas fa-print fallback-icon\'></i>';" />
+                    </div>
+                    <p>Reliable business support services to keep you productive and efficient.</p>
+                    <div class="service-details">
+                        <span><i class="fas fa-clock"></i> Delivery: Same day</span>
+                        <span><i class="fas fa-tag"></i> Starting at UGX 500</span>
+                    </div>
+                    <div class="service-subgrid">
+                        <span class="sub-item">Printing</span>
+                        <span class="sub-item">Photocopying</span>
+                        <span class="sub-item">Typing</span>
+                        <span class="sub-item">Scanning</span>
+                        <span class="sub-item">Editing</span>
+                        <span class="sub-item">Lamination &amp; Binding</span>
+                        <span class="sub-item">WiFi Hotspot</span>
+                        <span class="sub-item">Large Format Printing</span>
+                        <span class="sub-item">T-Shirts</span>
+                        <span class="sub-item">Mugs</span>
+                        <span class="sub-item">Roll-Up Banners</span>
+                        <span class="sub-item">Pull-Up Stands</span>
+                        <span class="sub-item">Flyers</span>
+                        <span class="sub-item">Books</span>
+                        <span class="sub-item">Calendars</span>
+                        <span class="sub-item">Stickers</span>
+                        <span class="sub-item">Brochures</span>
+                    </div>
+                    <div class="tech-tools">
+                        <span class="tool">MS Office</span>
+                        <span class="tool">Adobe Acrobat</span>
+                        <span class="tool">Large Format Printer</span>
+                        <span class="tool">Laminator</span>
+                        <span class="tool">Binding Machine</span>
+                    </div>
+                    <div class="service-footer">
+                        <div class="price">UGX 500 <span>+</span></div>
+                        <a href="contact.html" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    WHY CHOOSE US
+    ============================================================ -->
+    <section class="why-section">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="section-tag">Why Victor Tech</span>
+                <h2 class="section-title">Why Choose Us</h2>
+                <p class="section-subtitle">We combine technical expertise with creative passion to deliver outstanding results.</p>
+            </div>
+
+            <div class="why-grid reveal">
+                <div class="why-item">
+                    <div class="icon"><i class="fas fa-users"></i></div>
+                    <h4>Experienced Professionals</h4>
+                    <p>Skilled experts dedicated to your success.</p>
+                </div>
+                <div class="why-item">
+                    <div class="icon"><i class="fas fa-tags"></i></div>
+                    <h4>Affordable Prices</h4>
+                    <p>Quality services at competitive rates.</p>
+                </div>
+                <div class="why-item">
+                    <div class="icon"><i class="fas fa-bolt"></i></div>
+                    <h4>Fast Delivery</h4>
+                    <p>Timely execution without compromising quality.</p>
+                </div>
+                <div class="why-item">
+                    <div class="icon"><i class="fas fa-star"></i></div>
+                    <h4>Creative Designs</h4>
+                    <p>Attention to detail in every project.</p>
+                </div>
+                <div class="why-item">
+                    <div class="icon"><i class="fas fa-headset"></i></div>
+                    <h4>24/7 Customer Support</h4>
+                    <p>We're here whenever you need us.</p>
+                </div>
+                <div class="why-item">
+                    <div class="icon"><i class="fas fa-smile"></i></div>
+                    <h4>Satisfaction Guaranteed</h4>
+                    <p>We don't stop until you're 100% happy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    PROCESS SECTION
+    ============================================================ -->
+    <section class="process-section section-bg">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="section-tag">How We Work</span>
+                <h2 class="section-title">Our Process</h2>
+                <p class="section-subtitle">A simple, transparent process designed to deliver exceptional results.</p>
+            </div>
+
+            <div class="process-grid reveal">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h4>Consultation</h4>
+                    <p>We understand your needs and goals.</p>
+                    <div class="arrow"><i class="fas fa-chevron-right"></i></div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h4>Planning</h4>
+                    <p>We create a detailed project roadmap.</p>
+                    <div class="arrow"><i class="fas fa-chevron-right"></i></div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h4>Design</h4>
+                    <p>We bring your vision to life.</p>
+                    <div class="arrow"><i class="fas fa-chevron-right"></i></div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h4>Development</h4>
+                    <p>We build &amp; refine your project.</p>
+                    <div class="arrow"><i class="fas fa-chevron-right"></i></div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <h4>Review</h4>
+                    <p>We present the final product for feedback.</p>
+                    <div class="arrow"><i class="fas fa-chevron-right"></i></div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">6</div>
+                    <h4>Delivery</h4>
+                    <p>We deliver and provide ongoing support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    TESTIMONIALS
+    ============================================================ -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-subtitle">Real feedback from real clients who have worked with us.</p>
+            </div>
+
+            <div class="testimonials-grid reveal">
+                <div class="testimonial-item">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <blockquote>"Victor Tech created our company website professionally and on time. The team was responsive and delivered exactly what we needed."</blockquote>
+                    <div class="client">Sarah Nambi</div>
+                    <div class="client-role">CEO, BrightFuture Schools</div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <blockquote>"Our graduation photos exceeded expectations. Victor Shots Professional captured every special moment beautifully."</blockquote>
+                    <div class="client">Grace Akiiki</div>
+                    <div class="client-role">Event Planner, Grace Events</div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <blockquote>"The branding package gave our business a fresh new look. We've received so many compliments on our new identity."</blockquote>
+                    <div class="client">John Muwonge</div>
+                    <div class="client-role">Founder, JMS Enterprises</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    FAQ SECTION
+    ============================================================ -->
+    <section class="faq-section section-bg">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="section-tag">FAQs</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Find answers to the most common questions about our services.</p>
+            </div>
+
+            <div class="faq-grid reveal" id="faqGrid">
+                <div class="faq-item">
+                    <div class="faq-question">Do you travel outside Mukono? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">Yes! We provide services across Uganda. Whether you're in Kampala, Jinja, Entebbe, or any other city, we're available to serve you.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How long does a website take? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">Typically 5-14 days depending on the complexity. A simple website takes 3-5 days, while e-commerce or portal sites take 10-20 days.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Can I request revisions? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">Absolutely! We offer revisions until you're 100% satisfied with the final result. Your satisfaction is our priority.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Do you offer after-sales support? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">Yes! We provide ongoing support for all our services. Whether it's website maintenance, technical help, or design updates, we're here for you.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CTA SECTION
+    ============================================================ -->
+    <section class="cta-section">
+        <div class="container reveal">
+            <h2>Need a Professional Solution?</h2>
+            <p>Let's build your next project together. Get a free consultation and personalized quote.</p>
+            <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+                <a href="contact.html" class="btn btn-white"><i class="fas fa-rocket"></i> Request Free Quote</a>
+                <a href="https://wa.me/256766783991" target="_blank" class="btn btn-outline-white"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+                <a href="tel:+256766783991" class="btn btn-outline-white"><i class="fas fa-phone"></i> Call Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+
+                <!-- Brand Column -->
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon"><img src="images/logo/logo.png" alt="Victor Tech official logo" /></div>
+                        <div class="logo-text">
+                            <span class="main">VICTOR<span>TECH</span></span>
+                            <span class="tag">Designing Solutions, Capturing Moments</span>
+                        </div>
+                    </a>
+                    <p>Designing Solutions, Capturing Moments, Delivering Excellence.</p>
+                    <div class="socials">
+                        <a href="https://facebook.com/victortech.ug" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/victortech.ug" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/victortechug" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/@victortech-ug" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://linkedin.com/company/victortech" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="footer-services">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Technology</a></li>
+                        <li><a href="services.html">Graphics Design</a></li>
+                        <li><a href="services.html">Photography</a></li>
+                        <li><a href="services.html">Videography</a></li>
+                        <li><a href="services.html">Secretarial</a></li>
+                    </ul>
+                </div>
+
+                <!-- Right Column: Newsletter -->
+                <div class="footer-right">
+                    <div class="footer-newsletter">
+                        <h4>Newsletter</h4>
+                        <p>Subscribe for updates, tips, and exclusive offers.</p>
+                        <form class="newsletter-form" id="newsletterForm">
+                            <input type="email" placeholder="Your email address" required aria-label="Email for newsletter" />
+                            <button type="submit"><i class="fas fa-arrow-right"></i> Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                &copy; 2026 <strong>VICTOR TECH</strong>. All Rights Reserved. &mdash; Mbalala-Mukono, Uganda.<br />
+                <span style="font-size:0.8rem; opacity:0.5;">Designed &amp; Developed by Victor Tech</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== FLOATING WHATSAPP ========== -->
+    <a href="https://wa.me/256766783991" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- ============================================================
+    JAVASCRIPT
+    ============================================================ -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+
+            // ===== THEME TOGGLE =====
+            const themeToggle = document.getElementById('themeToggle');
+            if (themeToggle) {
+                const icon = themeToggle.querySelector('i');
+                const html = document.documentElement;
+                if (localStorage.getItem('theme') === 'dark') {
+                    html.setAttribute('data-theme', 'dark');
+                    icon.className = 'fas fa-sun';
+                }
+                themeToggle.addEventListener('click', function() {
+                    if (html.getAttribute('data-theme') === 'dark') {
+                        html.removeAttribute('data-theme');
+                        localStorage.setItem('theme', 'light');
+                        icon.className = 'fas fa-moon';
+                    } else {
+                        html.setAttribute('data-theme', 'dark');
+                        localStorage.setItem('theme', 'dark');
+                        icon.className = 'fas fa-sun';
+                    }
+                });
+            }
+
+            // ===== HAMBURGER =====
+            const hamburger = document.getElementById('hamburger');
+            const navMenu = document.getElementById('navMenu');
+            if (hamburger && navMenu) {
+                hamburger.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    navMenu.classList.toggle('open');
+                    hamburger.classList.toggle('active');
+                    const expanded = hamburger.getAttribute('aria-expanded') === 'true' ? 'false' : 'true';
+                    hamburger.setAttribute('aria-expanded', expanded);
+                });
+
+                // Close menu when a link is clicked
+                navMenu.querySelectorAll('a').forEach(function(link) {
+                    link.addEventListener('click', function() {
+                        navMenu.classList.remove('open');
+                        hamburger.classList.remove('active');
+                        hamburger.setAttribute('aria-expanded', 'false');
+                    });
+                });
+
+                // Close menu when clicking outside
+                document.addEventListener('click', function(e) {
+                    if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+                        navMenu.classList.remove('open');
+                        hamburger.classList.remove('active');
+                        hamburger.setAttribute('aria-expanded', 'false');
+                    }
+                });
+
+                // Close on escape key
+                document.addEventListener('keydown', function(e) {
+                    if (e.key === 'Escape' && navMenu.classList.contains('open')) {
+                        navMenu.classList.remove('open');
+                        hamburger.classList.remove('active');
+                        hamburger.setAttribute('aria-expanded', 'false');
+                    }
+                });
+            }
+
+            // ===== STICKY HEADER =====
+            const header = document.getElementById('header');
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+
+            // ===== SCROLL REVEAL =====
+            const revealElements = document.querySelectorAll('.reveal');
+            if ('IntersectionObserver' in window) {
+                const observer = new IntersectionObserver(function(entries) {
+                    entries.forEach(function(entry) {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+                revealElements.forEach(function(el) { observer.observe(el); });
+            } else {
+                function checkReveal() {
+                    const windowHeight = window.innerHeight;
+                    document.querySelectorAll('.reveal:not(.visible)').forEach(function(el) {
+                        const rect = el.getBoundingClientRect();
+                        if (rect.top < windowHeight - 100) {
+                            el.classList.add('visible');
+                        }
+                    });
+                }
+                window.addEventListener('scroll', checkReveal);
+                window.addEventListener('load', checkReveal);
+                setTimeout(checkReveal, 300);
+            }
+
+            // ===== ANIMATED COUNTERS =====
+            const counters = document.querySelectorAll('.hero-stats .stat .number');
+            let countersAnimated = false;
+
+            function animateCounters() {
+                if (countersAnimated) return;
+                const trigger = document.querySelector('.hero-stats');
+                if (!trigger) return;
+                const rect = trigger.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 80) {
+                    countersAnimated = true;
+                    counters.forEach(function(counter) {
+                        const target = parseInt(counter.getAttribute('data-count') || '0');
+                        let current = 0;
+                        const increment = Math.ceil(target / 60);
+                        const interval = setInterval(function() {
+                            current += increment;
+                            if (current >= target) {
+                                current = target;
+                                clearInterval(interval);
+                            }
+                            counter.textContent = current;
+                        }, 30);
+                    });
+                }
+            }
+
+            window.addEventListener('scroll', animateCounters);
+            window.addEventListener('load', animateCounters);
+            setTimeout(animateCounters, 500);
+
+            // ===== FAQ ACCORDION =====
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(function(item) {
+                item.addEventListener('click', function() {
+                    this.classList.toggle('open');
+                });
+            });
+
+            // ===== NEWSLETTER =====
+            const newsletterForm = document.getElementById('newsletterForm');
+            if (newsletterForm) {
+                newsletterForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const input = this.querySelector('input');
+                    const btn = this.querySelector('button');
+                    const original = btn.innerHTML;
+                    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
+                    setTimeout(function() {
+                        btn.innerHTML = '<i class="fas fa-check"></i> Done!';
+                        input.value = '';
+                        setTimeout(function() { btn.innerHTML = original; }, 2000);
+                    }, 1000);
+                });
+            }
+
+        });
+    </script>
+
+</body>
+</html>

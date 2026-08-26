@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ========== SEO META TAGS ========== -->
+    <title>About Victor Tech | Uganda's Technology & Creative Solutions Company</title>
+    <meta name="description" content="Learn about Victor Tech, a leading technology and creative solutions company in Uganda specializing in website design, mobile apps, branding, graphics design, photography, videography and secretarial services." />
+    <meta name="keywords" content="Victor Tech, About Victor Tech, Website Design Uganda, Graphics Design Uganda, Photography Mukono, Branding Uganda, Software Installation, Creative Agency Uganda" />
+    <meta name="author" content="Victor Tech" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- ========== OPEN GRAPH / SOCIAL META ========== -->
+    <meta property="og:title" content="About Victor Tech | Uganda's Technology & Creative Solutions Company" />
+    <meta property="og:description" content="Professional technology and creative solutions company in Uganda. Learn about our mission, vision, and team." />
+    <meta property="og:image" content="images/logo/logo.png" />
+    <meta property="og:url" content="https://victortech.ug/about.html" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- ========== FAVICON ========== -->
+    <link rel="icon" type="image/png" href="images/logo/logo.png" />
+    <link rel="apple-touch-icon" href="images/logo/logo.png" />
+
+    <!-- ========== GOOGLE FONTS ========== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- ========== FONT AWESOME ========== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- ========== EXTERNAL CSS ========== -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- ========== PREMIUM ABOUT PAGE STYLES ========== -->
+    <style>
+        /* ===== PAGE TRANSITION ===== */
+        .page-wrapper {
+            opacity: 0;
+            animation: pageFadeIn 0.6s ease forwards;
+        }
+        @keyframes pageFadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ===== ABOUT SECTION PADDING ===== */
+        #about {
+            padding-top: 140px;
+            padding-bottom: 60px;
+        }
+
+        /* ===== BREADCRUMB ===== */
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.85rem;
+            color: var(--gray-500);
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+        .breadcrumb a {
+            color: var(--maroon);
+            transition: var(--transition);
+        }
+        .breadcrumb a:hover {
+            color: var(--orange);
+        }
+        .breadcrumb .separator {
+            color: var(--gray-300);
+        }
+
+        /* ===== STATISTICS COUNTERS ===== */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+            padding: 2.5rem 2rem;
+            background: linear-gradient(135deg, var(--maroon), var(--maroon-dark));
+            border-radius: var(--radius);
+            color: var(--white);
+            text-align: center;
+        }
+        .stats-grid .stat-item .number {
+            font-family: var(--font-secondary);
+            font-size: 2.8rem;
+            font-weight: 800;
+            display: block;
+            line-height: 1.2;
+        }
+        .stats-grid .stat-item .label {
+            font-size: 0.95rem;
+            opacity: 0.85;
+            font-weight: 500;
+        }
+        .stats-grid .stat-item .icon {
+            font-size: 2rem;
+            margin-bottom: 0.3rem;
+            display: block;
+            color: var(--orange);
+        }
+
+        /* ===== CORE VALUES ===== */
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .value-card {
+            background: var(--white);
+            padding: 1.8rem 1.5rem;
+            border-radius: var(--radius);
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--gray-100);
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .value-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--orange);
+        }
+        .value-card .icon {
+            font-size: 2.6rem;
+            color: var(--orange);
+            margin-bottom: 0.8rem;
+            display: block;
+        }
+        .value-card h4 {
+            font-size: 1.05rem;
+            margin-bottom: 0.3rem;
+        }
+        .value-card p {
+            font-size: 0.9rem;
+            color: var(--gray-500);
+        }
+
+        /* ===== WHY CHOOSE US ===== */
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .why-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: var(--white);
+            padding: 1.2rem 1.5rem;
+            border-radius: var(--radius-sm);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--gray-100);
+            transition: var(--transition);
+        }
+        .why-item:hover {
+            transform: translateX(5px);
+            border-color: var(--maroon);
+        }
+        .why-item i {
+            font-size: 1.6rem;
+            color: var(--orange);
+            flex-shrink: 0;
+        }
+        .why-item h5 {
+            font-size: 0.95rem;
+            margin-bottom: 0.1rem;
+        }
+        .why-item p {
+            font-size: 0.8rem;
+            color: var(--gray-500);
+        }
+
+        /* ===== TIMELINE ===== */
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+            margin-top: 1.5rem;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 6px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--maroon);
+        }
+        .timeline-item {
+            position: relative;
+            padding: 0.8rem 0 0.8rem 2rem;
+            border-left: 2px solid transparent;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -8px;
+            top: 1.2rem;
+            width: 16px;
+            height: 16px;
+            background: var(--maroon);
+            border-radius: 50%;
+            border: 3px solid var(--white);
+            box-shadow: 0 0 0 2px var(--maroon);
+        }
+        .timeline-item .year {
+            font-weight: 700;
+            color: var(--maroon);
+            font-size: 0.95rem;
+        }
+        .timeline-item .desc {
+            font-size: 0.9rem;
+            color: var(--gray-600);
+        }
+
+        /* ===== CEO CARD WITH SOCIAL ===== */
+        .ceo-socials {
+            display: flex;
+            gap: 0.6rem;
+            margin-top: 0.5rem;
+        }
+        .ceo-socials a {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: var(--off-white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--maroon);
+            transition: var(--transition);
+            font-size: 0.9rem;
+            border: 1px solid var(--gray-200);
+        }
+        .ceo-socials a:hover {
+            background: var(--maroon);
+            color: var(--white);
+            border-color: var(--maroon);
+            transform: translateY(-3px);
+        }
+        .ceo-quote {
+            font-style: italic;
+            color: var(--gray-500);
+            font-size: 0.95rem;
+            padding: 0.8rem 1.2rem;
+            background: var(--off-white);
+            border-radius: var(--radius-sm);
+            border-left: 4px solid var(--orange);
+            margin-top: 0.5rem;
+        }
+
+        /* ===== TEAM SECTION ===== */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+        .team-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 1.8rem 1.5rem;
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--gray-100);
+            transition: var(--transition);
+        }
+        .team-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+        .team-card .avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: var(--maroon);
+            margin: 0 auto 0.8rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 2rem;
+            font-weight: 700;
+            font-family: var(--font-secondary);
+        }
+        .team-card h4 {
+            font-size: 1rem;
+            margin-bottom: 0.1rem;
+        }
+        .team-card .role {
+            font-size: 0.8rem;
+            color: var(--orange);
+            font-weight: 600;
+        }
+
+        /* ===== SKILLS BARS ===== */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .skill-item .skill-label {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 0.3rem;
+        }
+        .skill-item .skill-bar {
+            height: 8px;
+            background: var(--gray-200);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .skill-item .skill-bar .fill {
+            height: 100%;
+            border-radius: 10px;
+            background: linear-gradient(90deg, var(--maroon), var(--orange));
+            width: 0;
+            transition: width 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        /* ===== CLIENT LOGOS ===== */
+        .client-logos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 2.5rem;
+            margin-top: 1.5rem;
+            padding: 2rem;
+            background: var(--white);
+            border-radius: var(--radius);
+            border: 1px solid var(--gray-100);
+        }
+        .client-logos .logo-placeholder {
+            width: 100px;
+            height: 60px;
+            background: var(--off-white);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gray-400);
+            font-size: 0.7rem;
+            font-weight: 600;
+            transition: var(--transition);
+            border: 1px solid var(--gray-200);
+            padding: 0.5rem;
+            text-align: center;
+        }
+        .client-logos .logo-placeholder:hover {
+            border-color: var(--maroon);
+            transform: scale(1.05);
+        }
+        .client-logos .logo-placeholder img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        /* ===== CTA SECTION ===== */
+        .cta-section {
+            margin-top: 3rem;
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, var(--maroon), var(--maroon-dark));
+            border-radius: var(--radius);
+            text-align: center;
+            color: var(--white);
+        }
+        .cta-section h2 {
+            color: var(--white);
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+        .cta-section p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto 1.5rem;
+        }
+        .cta-section .btn-white {
+            background: var(--white);
+            color: var(--maroon);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+        }
+        .cta-section .btn-white:hover {
+            background: var(--off-white);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+        }
+        .cta-section .btn-outline-white {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+        .cta-section .btn-outline-white:hover {
+            background: var(--white);
+            color: var(--maroon);
+            transform: translateY(-3px);
+        }
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 1024px) {
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+                padding: 2rem 1.5rem;
+            }
+            .values-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .why-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        @media (max-width: 768px) {
+            .stats-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 1rem;
+            }
+            .stats-grid .stat-item .number {
+                font-size: 2rem;
+            }
+            .values-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+            .team-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .client-logos {
+                gap: 1rem;
+            }
+            .client-logos .logo-placeholder {
+                width: 80px;
+                height: 50px;
+            }
+            .cta-section {
+                padding: 2.5rem 1.5rem;
+            }
+            .cta-section h2 {
+                font-size: 1.6rem;
+            }
+        }
+        @media (max-width: 480px) {
+            .stats-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 0.8rem;
+                padding: 1.5rem 1rem;
+            }
+            .stats-grid .stat-item .number {
+                font-size: 1.6rem;
+            }
+            .stats-grid .stat-item .label {
+                font-size: 0.75rem;
+            }
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+              /* ============================================================
+           FOOTER
+           ============================================================ */
+        footer {
+            background: var(--gray-900);
+            color: rgba(255, 255, 255, 0.8);
+            padding: 3rem 0 1.5rem;
+            margin-top: 2rem;
+        }
+        [data-theme="dark"] footer {
+            background: #0d0b09;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        .footer-brand p {
+            font-size: 0.9rem;
+            opacity: 0.7;
+            max-width: 300px;
+            margin: 0.5rem 0;
+        }
+        .footer-brand .socials {
+            display: flex;
+            gap: 0.6rem;
+            margin-top: 0.5rem;
+        }
+        .footer-brand .socials a {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.06);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            transition: var(--transition);
+        }
+        .footer-brand .socials a:hover {
+            background: var(--maroon);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+        /* Footer logo — brand colors */
+        .footer-brand .logo .logo-text .main {
+            color: var(--white);
+        }
+        .footer-brand .logo .logo-text .main span {
+            color: var(--orange);
+        }
+        [data-theme="dark"] .footer-brand .logo .logo-text .main {
+            color: var(--maroon);
+        }
+        [data-theme="dark"] .footer-brand .logo .logo-text .main span {
+            color: var(--orange);
+        }
+
+        .footer-links h4,
+        .footer-services h4,
+        .footer-newsletter h4 {
+            color: var(--white);
+            font-size: 0.95rem;
+            margin-bottom: 0.8rem;
+        }
+        .footer-links ul,
+        .footer-services ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+        }
+        .footer-links ul li a,
+        .footer-services ul li a {
+            font-size: 0.85rem;
+            opacity: 0.7;
+            transition: var(--transition);
+        }
+        .footer-links ul li a:hover,
+        .footer-services ul li a:hover {
+            opacity: 1;
+            color: var(--orange);
+        }
+        .footer-newsletter p {
+            font-size: 0.85rem;
+            opacity: 0.7;
+            margin-bottom: 0.8rem;
+        }
+        .newsletter-form {
+            display: flex;
+            gap: 0.5rem;
+        }
+        .newsletter-form input {
+            flex: 1;
+            padding: 0.5rem 0.8rem;
+            border-radius: 50px;
+            border: none;
+            background: rgba(255, 255, 255, 0.08);
+            color: var(--white);
+            font-family: var(--font-body);
+            font-size: 0.85rem;
+        }
+        .newsletter-form input::placeholder {
+            color: rgba(255, 255, 255, 0.4);
+        }
+        .newsletter-form input:focus {
+            outline: 2px solid var(--orange);
+        }
+        .newsletter-form button {
+            padding: 0.5rem 1.2rem;
+            border-radius: 50px;
+            border: none;
+            background: var(--orange);
+            color: var(--gray-900);
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 0.8rem;
+            white-space: nowrap;
+        }
+        .newsletter-form button:hover {
+            background: var(--orange-light);
+            transform: scale(1.04);
+        }
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            padding-top: 1.2rem;
+            text-align: center;
+            font-size: 0.8rem;
+            opacity: 0.5;
+        }
+
+        /* ============================================================
+           WHATSAPP FLOAT
+           ============================================================ */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: #25D366;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: 0 4px 24px rgba(37, 211, 102, 0.35);
+            z-index: 999;
+            transition: var(--transition);
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.08);
+            box-shadow: 0 6px 32px rgba(37, 211, 102, 0.5);
+        }
+
+        /* ============================================================
+           RESPONSIVE — HEADER & FOOTER
+           ============================================================ */
+        @media (max-width: 992px) {
+            .nav-menu {
+                position: fixed;
+                top: 72px;
+                left: 0;
+                right: 0;
+                background: rgba(255, 255, 255, 0.98);
+                backdrop-filter: blur(12px);
+                flex-direction: column;
+                padding: 1.5rem 2rem;
+                gap: 0.5rem;
+                border-bottom: 1px solid var(--gray-100);
+                transform: translateY(-120%);
+                opacity: 0;
+                transition: all 0.4s ease;
+                box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+                margin: 0;
+                align-items: stretch;
+                border-radius: 0 0 16px 16px;
+            }
+            .nav-menu.open {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            .nav-menu a {
+                padding: 0.6rem 1rem;
+                border-radius: 8px;
+                text-align: center;
+            }
+            .hamburger {
+                display: flex;
+            }
+            [data-theme="dark"] .nav-menu {
+                background: rgba(18, 16, 14, 0.98);
+                border-bottom-color: rgba(255, 255, 255, 0.06);
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            /* ===== FOOTER: 2-COLUMN LINKS ON MOBILE ===== */
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 1.8rem 1.5rem;
+            }
+            .footer-brand {
+                grid-column: 1 / -1;
+                text-align: center;
+            }
+            .footer-brand p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .footer-brand .socials {
+                justify-content: center;
+            }
+            .footer-links h4,
+            .footer-services h4,
+            .footer-newsletter h4 {
+                font-size: 0.9rem;
+            }
+            .footer-links ul,
+            .footer-services ul {
+                gap: 0.2rem;
+            }
+            .footer-links ul li a,
+            .footer-services ul li a {
+                font-size: 0.8rem;
+                padding: 0.1rem 0;
+            }
+            .footer-newsletter {
+                grid-column: 1 / -1;
+                text-align: center;
+            }
+            .footer-newsletter p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .newsletter-form {
+                max-width: 380px;
+                margin: 0 auto;
+            }
+            .footer-bottom {
+                font-size: 0.7rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .nav-actions .btn {
+                display: none;
+            }
+            .logo-text .tag {
+                display: none;
+            }
+            .logo-text .main {
+                font-size: 0.95rem;
+            }
+            .whatsapp-float {
+                width: 48px;
+                height: 48px;
+                font-size: 1.6rem;
+                bottom: 18px;
+                right: 18px;
+            }
+            .footer-grid {
+                gap: 1.5rem 1rem;
+            }
+            .footer-links ul li a,
+            .footer-services ul li a {
+                font-size: 0.75rem;
+            }
+            .newsletter-form {
+                flex-wrap: wrap;
+            }
+            .newsletter-form button {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== PAGE WRAPPER ===== -->
+    <div class="page-wrapper">
+
+        <!-- ========== HEADER ========== -->
+        <header id="header">
+            <div class="container nav-container">
+                <a href="index.html" class="logo" aria-label="Victor Tech Home">
+                    <div class="logo-icon"><img src="images/logo/logo.png" alt="Victor Tech official company logo" style="width:100%; height:100%; object-fit:contain; padding:4px;" /></div>
+                    <div class="logo-text"><span class="main">VICTOR<span>TECH</span></span><span class="tag">Designing Solutions, Capturing Moments</span></div>
+                </a>
+                <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
+                    <a href="index.html">Home</a>
+                    <a href="about.html" class="active">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="pricing.html">Pricing</a>
+                    <a href="testimonials.html">Testimonials</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+                <div class="nav-actions">
+                    <a href="contact.html" class="btn btn-primary btn-sm">Get Started</a>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
+                    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+                </div>
+            </div>
+        </header>
+
+        <!-- ========== ABOUT SECTION ========== -->
+        <section id="about" class="section-bg">
+            <div class="container">
+
+                <!-- ===== BREADCRUMB ===== -->
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                    <span class="separator">›</span>
+                    <span>About Us</span>
+                </nav>
+
+                <!-- ===== ABOUT GRID ===== -->
+                <div class="about-grid">
+                    <div class="about-image reveal">
+                        <img src="images/about/who we are.png" alt="Victor Tech creative team working together on technology and design projects" style="width:100%; height:100%; object-fit:cover;" />
+                        <div class="about-badge">
+                            <i class="fas fa-award"></i> 5+ Years of Excellence
+                        </div>
+                    </div>
+                    <div class="about-content reveal">
+                        <span class="section-tag">About Us</span>
+                        <h2 class="section-title">Who We Are</h2>
+                        <p>
+                            Victor Tech is a professional technology and creative solutions company providing
+                            website design, mobile applications, branding, graphics design, photography,
+                            videography, and secretarial services for businesses, schools, organizations,
+                            and individuals across Uganda.
+                        </p>
+                        <div class="about-mission-vision">
+                            <div class="mv-item">
+                                <h4><i class="fas fa-bullseye" style="color:var(--orange);"></i> Mission</h4>
+                                <p>To empower businesses with innovative technology and creative solutions that drive growth and excellence.</p>
+                            </div>
+                            <div class="mv-item">
+                                <h4><i class="fas fa-eye" style="color:var(--orange);"></i> Vision</h4>
+                                <p>To become Uganda's leading technology and creative solutions provider, recognized for quality and innovation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== STATISTICS COUNTERS ===== -->
+                <div class="stats-grid reveal">
+                    <div class="stat-item">
+                        <span class="icon"><i class="fas fa-project-diagram"></i></span>
+                        <span class="number" data-count="500">0</span>
+                        <span class="label">Projects Completed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="icon"><i class="fas fa-smile"></i></span>
+                        <span class="number" data-count="300">0</span>
+                        <span class="label">Happy Clients</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="icon"><i class="fas fa-calendar-alt"></i></span>
+                        <span class="number" data-count="5">0</span>
+                        <span class="label">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="icon"><i class="fas fa-headset"></i></span>
+                        <span class="number" data-count="100">0</span>
+                        <span class="label">% Client Satisfaction</span>
+                    </div>
+                </div>
+
+                <!-- ===== CEO CARD (Enhanced) ===== -->
+                <div class="ceo-card reveal" style="margin-top:2rem;">
+                    <div class="ceo-avatar">
+                        <img src="images/team/CEO.png" alt="Muwanguzi Musa, Founder and CEO of Victor Tech" style="width:100%; height:100%; border-radius:50%; object-fit:cover;" />
+                    </div>
+                    <div class="ceo-info">
+                        <h4>Muwanguzi Musa</h4>
+                        <div class="ceo-title">CEO &amp; Founder, Victor Tech</div>
+                        <div class="ceo-quote">
+                            <i class="fas fa-quote-left" style="color:var(--orange); opacity:0.6;"></i>
+                            Technology is not just about computers; it's about creating solutions that improve lives and transform communities.
+                        </div>
+                        <div class="ceo-socials">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="mailto:victortech49@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                            <a href="https://wa.me/256766783991" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== CORE VALUES ===== -->
+                <div style="margin-top:3rem;">
+                    <div class="text-center reveal">
+                        <span class="section-tag">Our Values</span>
+                        <h2 class="section-title">Core Values</h2>
+                        <p class="section-subtitle">The principles that guide everything we do at Victor Tech.</p>
+                    </div>
+                    <div class="values-grid reveal">
+                        <div class="value-card">
+                            <span class="icon"><i class="fas fa-lightbulb"></i></span>
+                            <h4>Innovation</h4>
+                            <p>We embrace creativity and new ideas to deliver cutting-edge solutions.</p>
+                        </div>
+                        <div class="value-card">
+                            <span class="icon"><i class="fas fa-handshake"></i></span>
+                            <h4>Integrity</h4>
+                            <p>We operate with honesty, transparency, and ethical responsibility.</p>
+                        </div>
+                        <div class="value-card">
+                            <span class="icon"><i class="fas fa-star"></i></span>
+                            <h4>Excellence</h4>
+                            <p>We strive for the highest quality in every project we undertake.</p>
+                        </div>
+                        <div class="value-card">
+                            <span class="icon"><i class="fas fa-heart"></i></span>
+                            <h4>Customer Focus</h4>
+                            <p>We put our clients at the center of everything we do.</p>
+                        </div>
+                        <div class="value-card">
+                            <span class="icon"><i class="fas fa-graduation-cap"></i></span>
+                            <h4>Continuous Learning</h4>
+                            <p>We grow and adapt to stay ahead of industry trends.</p>
+                        </div>
+                        <div class="value-card">
+                            <span class="icon"><i class="fas fa-shield-alt"></i></span>
+                            <h4>Professionalism</h4>
+                            <p>We maintain the highest standards of professional conduct.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== WHY CHOOSE US ===== -->
+                <div style="margin-top:3rem;">
+                    <div class="text-center reveal">
+                        <span class="section-tag">Why Victor Tech</span>
+                        <h2 class="section-title">Why Choose Us</h2>
+                        <p class="section-subtitle">Here's why our clients trust us with their technology and creative needs.</p>
+                    </div>
+                    <div class="why-grid reveal">
+                        <div class="why-item"><i class="fas fa-users"></i><div><h5>Professional Team</h5><p>Skilled experts dedicated to your success.</p></div></div>
+                        <div class="why-item"><i class="fas fa-tags"></i><div><h5>Affordable Pricing</h5><p>Quality services at competitive rates.</p></div></div>
+                        <div class="why-item"><i class="fas fa-bolt"></i><div><h5>Fast Delivery</h5><p>Timely execution without compromising quality.</p></div></div>
+                        <div class="why-item"><i class="fas fa-star"></i><div><h5>High Quality Work</h5><p>Attention to detail in every project.</p></div></div>
+                        <div class="why-item"><i class="fas fa-smile"></i><div><h5>Customer Satisfaction</h5><p>Your happiness is our priority.</p></div></div>
+                        <div class="why-item"><i class="fas fa-headset"></i><div><h5>24/7 Support</h5><p>We're here whenever you need us.</p></div></div>
+                    </div>
+                </div>
+
+                <!-- ===== COMPANY TIMELINE ===== -->
+                <div style="margin-top:3rem;">
+                    <div class="text-center reveal">
+                        <span class="section-tag">Our Journey</span>
+                        <h2 class="section-title">Company Timeline</h2>
+                        <p class="section-subtitle">The milestones that have shaped Victor Tech since day one.</p>
+                    </div>
+                    <div class="timeline reveal">
+                        <div class="timeline-item"><span class="year">2021</span><p class="desc">Victor Tech was founded with a vision to deliver technology and creative solutions.</p></div>
+                        <div class="timeline-item"><span class="year">2022</span><p class="desc">Expanded services to include Branding, Graphics Design, and Secretarial Services.</p></div>
+                        <div class="timeline-item"><span class="year">2023</span><p class="desc">Launched Victor Shots Professional – Photography &amp; Videography Division.</p></div>
+                        <div class="timeline-item"><span class="year">2024</span><p class="desc">Grew our team and started offering Website &amp; Mobile Development Services.</p></div>
+                        <div class="timeline-item"><span class="year">2025</span><p class="desc">Served hundreds of clients across Uganda, building a reputation for excellence.</p></div>
+                        <div class="timeline-item"><span class="year">2026</span><p class="desc">Continuing to grow and innovate, serving clients across Uganda and beyond.</p></div>
+                    </div>
+                </div>
+
+                <!-- ===== SKILLS / CERTIFICATIONS ===== -->
+                <div style="margin-top:3rem;">
+                    <div class="text-center reveal">
+                        <span class="section-tag">Expertise</span>
+                        <h2 class="section-title">Our Skills &amp; Expertise</h2>
+                        <p class="section-subtitle">We combine technical knowledge with creative talent to deliver outstanding results.</p>
+                    </div>
+                    <div class="skills-grid reveal" id="skillsSection">
+                        <div class="skill-item"><div class="skill-label"><span>Website Design</span><span>95%</span></div><div class="skill-bar"><div class="fill" data-width="95"></div></div></div>
+                        <div class="skill-item"><div class="skill-label"><span>Graphics Design</span><span>98%</span></div><div class="skill-bar"><div class="fill" data-width="98"></div></div></div>
+                        <div class="skill-item"><div class="skill-label"><span>Photography</span><span>92%</span></div><div class="skill-bar"><div class="fill" data-width="92"></div></div></div>
+                        <div class="skill-item"><div class="skill-label"><span>Videography</span><span>90%</span></div><div class="skill-bar"><div class="fill" data-width="90"></div></div></div>
+                        <div class="skill-item"><div class="skill-label"><span>Branding</span><span>96%</span></div><div class="skill-bar"><div class="fill" data-width="96"></div></div></div>
+                        <div class="skill-item"><div class="skill-label"><span>Mobile App Development</span><span>88%</span></div><div class="skill-bar"><div class="fill" data-width="88"></div></div></div>
+                    </div>
+                </div>
+
+                <!-- ===== TEAM SECTION ===== -->
+                <div style="margin-top:3rem;">
+                    <div class="text-center reveal">
+                        <span class="section-tag">Our Team</span>
+                        <h2 class="section-title">Leadership Team</h2>
+                        <p class="section-subtitle">Meet the passionate people behind Victor Tech.</p>
+                    </div>
+                    <div class="team-grid reveal">
+                        <div class="team-card">
+                            <div class="avatar">MM</div>
+                            <h4>Muwanguzi Musa</h4>
+                            <div class="role">Founder &amp; CEO</div>
+                            <p style="font-size:0.8rem; color:var(--gray-500); margin-top:0.3rem;">Visionary leader driving innovation.</p>
+                        </div>
+                        <div class="team-card">
+                            <div class="avatar" style="background:var(--orange);">CD</div>
+                            <h4>Creative Designer</h4>
+                            <div class="role">Senior Designer</div>
+                            <p style="font-size:0.8rem; color:var(--gray-500); margin-top:0.3rem;">Bringing ideas to life visually.</p>
+                        </div>
+                        <div class="team-card">
+                            <div class="avatar" style="background:#4CAF50;">WD</div>
+                            <h4>Web Developer</h4>
+                            <div class="role">Full-Stack Developer</div>
+                            <p style="font-size:0.8rem; color:var(--gray-500); margin-top:0.3rem;">Building powerful digital experiences.</p>
+                        </div>
+                        <div class="team-card">
+                            <div class="avatar" style="background:#2196F3;">PT</div>
+                            <h4>Photography Team</h4>
+                            <div class="role">Lead Photographer</div>
+                            <p style="font-size:0.8rem; color:var(--gray-500); margin-top:0.3rem;">Capturing moments that matter.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== CLIENT LOGOS ===== -->
+                <div style="margin-top:3rem;">
+                    <div class="text-center reveal">
+                        <span class="section-tag">Trusted By</span>
+                        <h2 class="section-title">Our Clients</h2>
+                        <p class="section-subtitle">We're proud to have worked with these amazing organizations.</p>
+                    </div>
+                    <div class="client-logos reveal">
+                        <div class="logo-placeholder"><img src="images/clients/logo-placeholder.svg" alt="Client logo placeholder" onerror="this.style.display='none'; this.parentElement.textContent='BrightFuture Schools';">BrightFuture Schools</div>
+                        <div class="logo-placeholder">Seeta University</div>
+                        <div class="logo-placeholder">JMS Enterprises</div>
+                        <div class="logo-placeholder">Grace Events</div>
+                        <div class="logo-placeholder">Mukono District</div>
+                        <div class="logo-placeholder">And Many More...</div>
+                    </div>
+                </div>
+
+                <!-- ===== CALL TO ACTION ===== -->
+                <div class="cta-section reveal">
+                    <h2>Ready to Grow Your Business?</h2>
+                    <p>Let's build something amazing together. Get in touch with us today.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-white"><i class="fas fa-rocket"></i> Get Started</a>
+                        <a href="contact.html" class="btn btn-outline-white"><i class="fas fa-paper-plane"></i> Contact Us</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ========== FOOTER ========== -->
+        <footer>
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a href="index.html" class="logo">
+                            <div class="logo-icon"><img src="images/logo/logo.png" alt="Victor Tech official logo" style="width:100%; height:100%; object-fit:contain; padding:4px;" /></div>
+                            <div class="logo-text"><span class="main">VICTOR<span>TECH</span></span><span class="tag">Designing Solutions, Capturing Moments</span></div>
+                        </a>
+                        <p>Designing Solutions, Capturing Moments, Delivering Excellence.</p>
+                        <div class="socials">
+                            <a href="https://facebook.com/victortech.ug" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://instagram.com/victortech.ug" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://twitter.com/victortechug" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.youtube.com/@victortech-ug" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            <a href="https://linkedin.com/company/victortech" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-services">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="services.html">Technology</a></li>
+                            <li><a href="services.html">Graphics Design</a></li>
+                            <li><a href="services.html">Photography</a></li>
+                            <li><a href="services.html">Videography</a></li>
+                            <li><a href="services.html">Secretarial</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-newsletter">
+                        <h4>Newsletter</h4>
+                        <p>Subscribe for updates, tips, and exclusive offers.</p>
+                        <form class="newsletter-form" id="newsletterForm">
+                            <input type="email" placeholder="Your email address" required aria-label="Email for newsletter" />
+                            <button type="submit"><i class="fas fa-arrow-right"></i> Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    &copy; 2026 <strong>VICTOR TECH</strong>. All Rights Reserved. &mdash; Mbalala-Mukono, Uganda.<br />
+                    <span style="font-size:0.8rem; opacity:0.5;">Designed &amp; Developed by Victor Tech</span>
+                </div>
+            </div>
+        </footer>
+
+        <!-- ========== FLOATING WHATSAPP ========== -->
+        <a href="https://wa.me/256766783991" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+    </div>
+
+    <!-- ========== EXTERNAL JS ========== -->
+    <script src="script.js"></script>
+
+    <!-- ========== ABOUT PAGE SPECIFIC JS ========== -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+
+           
+
+            // ===== HAMBURGER MENU =====
+            const hamburger = document.getElementById('hamburger');
+            const navMenu = document.getElementById('navMenu');
+            if (hamburger && navMenu) {
+                hamburger.addEventListener('click', function() {
+                    navMenu.classList.toggle('open');
+                    hamburger.classList.toggle('active');
+                });
+                navMenu.querySelectorAll('a').forEach(function(link) {
+                    link.addEventListener('click', function() {
+                        navMenu.classList.remove('open');
+                        hamburger.classList.remove('active');
+                    });
+                });
+            }
+
+            // ===== STICKY HEADER =====
+            const header = document.getElementById('header');
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+
+            // ===== ANIMATED COUNTERS =====
+            const stats = document.querySelectorAll('.stats-grid .stat-item .number');
+            let statsAnimated = false;
+
+            function animateStats() {
+                if (statsAnimated) return;
+                const trigger = document.querySelector('.stats-grid');
+                if (!trigger) return;
+                const rect = trigger.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 80) {
+                    statsAnimated = true;
+                    stats.forEach(function(stat) {
+                        const target = parseInt(stat.getAttribute('data-count') || '0');
+                        let current = 0;
+                        const increment = Math.ceil(target / 60);
+                        const interval = setInterval(function() {
+                            current += increment;
+                            if (current >= target) {
+                                current = target;
+                                clearInterval(interval);
+                            }
+                            stat.textContent = current;
+                            if (target === 100) stat.textContent = current + '%';
+                        }, 30);
+                    });
+                }
+            }
+
+            window.addEventListener('scroll', animateStats);
+            window.addEventListener('load', animateStats);
+            setTimeout(animateStats, 500);
+
+            // ===== SKILLS BARS ANIMATION =====
+            const skillBars = document.querySelectorAll('.skill-item .fill');
+            let skillsAnimated = false;
+
+            function animateSkills() {
+                if (skillsAnimated) return;
+                const trigger = document.getElementById('skillsSection');
+                if (!trigger) return;
+                const rect = trigger.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 80) {
+                    skillsAnimated = true;
+                    skillBars.forEach(function(bar) {
+                        const width = bar.getAttribute('data-width');
+                        setTimeout(function() {
+                            bar.style.width = width + '%';
+                        }, 200);
+                    });
+                }
+            }
+
+            window.addEventListener('scroll', animateSkills);
+            window.addEventListener('load', animateSkills);
+            setTimeout(animateSkills, 500);
+
+            // ===== NEWSLETTER =====
+            const newsletterForm = document.getElementById('newsletterForm');
+            if (newsletterForm) {
+                newsletterForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const input = this.querySelector('input');
+                    const btn = this.querySelector('button');
+                    const original = btn.innerHTML;
+                    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
+                    setTimeout(function() {
+                        btn.innerHTML = '<i class="fas fa-check"></i> Done!';
+                        input.value = '';
+                        setTimeout(function() { btn.innerHTML = original; }, 2000);
+                    }, 1000);
+                });
+            }
+
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,1718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ========== SEO META TAGS ========== -->
+    <title>Victor Tech Pricing | Website Design, Branding & Photography Packages in Uganda</title>
+    <meta name="description" content="Affordable website design, branding, photography, videography and printing packages in Uganda. Request a free quotation from Victor Tech." />
+    <meta name="keywords" content="Website Pricing Uganda, Graphic Design Packages, Photography Prices, Victor Tech, Web Design Cost, Branding Packages" />
+    <meta name="author" content="Victor Tech" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- ========== OPEN GRAPH / SOCIAL META ========== -->
+    <meta property="og:title" content="Victor Tech Pricing | Website Design, Branding & Photography Packages in Uganda" />
+    <meta property="og:description" content="Affordable pricing for website design, branding, photography, videography and printing services in Uganda. Request a free quote today." />
+    <meta property="og:image" content="images/logo/logo.png" />
+    <meta property="og:url" content="https://victortech.ug/pricing.html" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- ========== FAVICON ========== -->
+    <link rel="icon" type="image/png" href="images/logo/logo.png" />
+    <link rel="apple-touch-icon" href="images/logo/logo.png" />
+
+    <!-- ========== JSON-LD STRUCTURED DATA ========== -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "provider": {
+            "@type": "Organization",
+            "name": "Victor Tech",
+            "url": "https://victortech.ug"
+        },
+        "serviceType": "Website Design, Branding, Photography, Videography, Printing, Secretarial Services",
+        "description": "Affordable technology and creative services in Uganda.",
+        "areaServed": "Uganda"
+    }
+    </script>
+
+    <!-- ========== GOOGLE FONTS ========== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- ========== FONT AWESOME ========== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- ========== EXTERNAL CSS ========== -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- ========== PREMIUM PRICING PAGE STYLES ========== -->
+    <style>
+        /* ===== PAGE TRANSITION ===== */
+        .page-wrapper {
+            opacity: 0;
+            animation: pageFadeIn 0.6s ease forwards;
+        }
+        @keyframes pageFadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ===== PRICING SECTION PADDING ===== */
+        #pricing {
+            padding-top: 140px;
+            padding-bottom: 60px;
+        }
+
+        /* ===== BREADCRUMB ===== */
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.85rem;
+            color: var(--gray-500);
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+        .breadcrumb a {
+            color: var(--maroon);
+            transition: var(--transition);
+        }
+        .breadcrumb a:hover {
+            color: var(--orange);
+        }
+        .breadcrumb .separator {
+            color: var(--gray-300);
+        }
+
+        /* ===== SERVICE TABS / TOGGLE ===== */
+        .pricing-tabs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            justify-content: center;
+            margin-bottom: 2.5rem;
+        }
+        .pricing-tabs button {
+            background: var(--off-white);
+            border: none;
+            padding: 0.6rem 1.8rem;
+            border-radius: 50px;
+            font-family: var(--font-primary);
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+            color: var(--gray-600);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        [data-theme="dark"] .pricing-tabs button {
+            background: #2a2520;
+            color: var(--gray-300);
+        }
+        .pricing-tabs button:hover,
+        .pricing-tabs button.active {
+            background: var(--maroon);
+            color: var(--white);
+            transform: translateY(-3px);
+            box-shadow: 0 4px 16px rgba(142, 28, 28, 0.25);
+        }
+        .pricing-tabs button i {
+            font-size: 1.1rem;
+        }
+
+        /* ===== PRICING GRID ===== */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 0.5rem;
+            align-items: stretch;
+        }
+
+        .pricing-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 2rem 1.8rem;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--gray-100);
+            text-align: center;
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        [data-theme="dark"] .pricing-card {
+            background: #2a2520;
+            border-color: #3d3730;
+        }
+        .pricing-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+        .pricing-card.featured {
+            border: 2px solid var(--orange);
+            box-shadow: var(--shadow-lg);
+            transform: scale(1.03);
+        }
+        .pricing-card.featured:hover {
+            transform: scale(1.03) translateY(-8px);
+        }
+        .pricing-card .badge {
+            position: absolute;
+            top: -12px;
+            right: 20px;
+            background: var(--orange);
+            color: var(--gray-900);
+            padding: 0.2rem 1.2rem;
+            border-radius: 50px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .pricing-card .badge.best-value {
+            background: #4CAF50;
+            color: var(--white);
+        }
+        .pricing-card .badge.new {
+            background: #2196F3;
+            color: var(--white);
+        }
+        .pricing-card .card-icon {
+            font-size: 2.5rem;
+            color: var(--maroon);
+            margin-bottom: 0.3rem;
+        }
+        [data-theme="dark"] .pricing-card .card-icon {
+            color: var(--orange-light);
+        }
+        .pricing-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.2rem;
+        }
+        .pricing-card .price {
+            font-family: var(--font-secondary);
+            font-size: 2.6rem;
+            font-weight: 800;
+            color: var(--maroon);
+            margin: 0.3rem 0;
+        }
+        [data-theme="dark"] .pricing-card .price {
+            color: var(--orange-light);
+        }
+        .pricing-card .price span {
+            font-size: 0.9rem;
+            font-weight: 400;
+            color: var(--gray-500);
+        }
+        .pricing-card .delivery {
+            font-size: 0.8rem;
+            color: var(--gray-500);
+            margin-bottom: 0.8rem;
+        }
+        .pricing-card .delivery i {
+            color: var(--orange);
+        }
+        .pricing-card ul {
+            text-align: left;
+            margin: 1rem 0 1.2rem;
+            padding: 0;
+            flex: 1;
+        }
+        .pricing-card ul li {
+            padding: 0.3rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-size: 0.9rem;
+            color: var(--gray-600);
+        }
+        [data-theme="dark"] .pricing-card ul li {
+            color: var(--gray-300);
+        }
+        .pricing-card ul li i {
+            color: var(--orange);
+            width: 18px;
+            flex-shrink: 0;
+        }
+        .pricing-card ul li .check {
+            color: #4CAF50;
+        }
+        .pricing-card ul li .times {
+            color: #f44336;
+        }
+        .pricing-card .btn {
+            margin-top: auto;
+            width: 100%;
+            font-size: 0.9rem;
+            padding: 0.7rem 1.5rem;
+        }
+        .pricing-card .btn .btn-icon {
+            margin-right: 0.4rem;
+        }
+
+        /* ===== COMPARISON TABLE ===== */
+        .compare-section {
+            margin-top: 3rem;
+            padding: 2.5rem 2rem;
+            background: var(--white);
+            border-radius: var(--radius);
+            border: 1px solid var(--gray-100);
+            overflow-x: auto;
+        }
+        [data-theme="dark"] .compare-section {
+            background: #2a2520;
+            border-color: #3d3730;
+        }
+        .compare-section h3 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: var(--maroon);
+        }
+        .compare-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+            min-width: 600px;
+        }
+        .compare-table th,
+        .compare-table td {
+            padding: 0.8rem 1rem;
+            text-align: center;
+            border-bottom: 1px solid var(--gray-200);
+        }
+        [data-theme="dark"] .compare-table th,
+        [data-theme="dark"] .compare-table td {
+            border-color: #3d3730;
+        }
+        .compare-table th {
+            font-weight: 700;
+            color: var(--gray-800);
+            background: var(--off-white);
+        }
+        [data-theme="dark"] .compare-table th {
+            background: #1a1714;
+            color: var(--gray-200);
+        }
+        .compare-table th:first-child {
+            text-align: left;
+        }
+        .compare-table td:first-child {
+            text-align: left;
+            font-weight: 500;
+            color: var(--gray-700);
+        }
+        [data-theme="dark"] .compare-table td:first-child {
+            color: var(--gray-300);
+        }
+        .compare-table .check {
+            color: #4CAF50;
+            font-size: 1.1rem;
+        }
+        .compare-table .times {
+            color: #f44336;
+            font-size: 1.1rem;
+        }
+        .compare-table .featured-col {
+            background: rgba(228, 168, 59, 0.08);
+        }
+        .compare-table .highlight {
+            color: var(--maroon);
+            font-weight: 700;
+        }
+
+        /* ===== FAQ SECTION ===== */
+        .faq-section {
+            margin-top: 3rem;
+            padding: 2.5rem 2rem;
+            background: var(--white);
+            border-radius: var(--radius);
+            border: 1px solid var(--gray-100);
+        }
+        [data-theme="dark"] .faq-section {
+            background: #2a2520;
+            border-color: #3d3730;
+        }
+        .faq-section h3 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: var(--maroon);
+        }
+        .faq-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+        .faq-item {
+            padding: 1rem 1.2rem;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--gray-200);
+            transition: var(--transition);
+            cursor: pointer;
+        }
+        [data-theme="dark"] .faq-item {
+            border-color: #3d3730;
+        }
+        .faq-item:hover {
+            border-color: var(--orange);
+        }
+        .faq-item .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: var(--gray-800);
+        }
+        [data-theme="dark"] .faq-item .faq-question {
+            color: var(--gray-200);
+        }
+        .faq-item .faq-question i {
+            color: var(--orange);
+            transition: var(--transition);
+        }
+        .faq-item .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.4s ease;
+            color: var(--gray-500);
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        [data-theme="dark"] .faq-item .faq-answer {
+            color: var(--gray-400);
+        }
+        .faq-item.open .faq-answer {
+            max-height: 200px;
+            padding-top: 0.8rem;
+        }
+        .faq-item.open .faq-question i {
+            transform: rotate(180deg);
+        }
+
+        /* ===== PAYMENT METHODS ===== */
+        .payment-section {
+            margin-top: 2rem;
+            padding: 1.5rem 2rem;
+            background: var(--white);
+            border-radius: var(--radius);
+            border: 1px solid var(--gray-100);
+            text-align: center;
+        }
+        [data-theme="dark"] .payment-section {
+            background: #2a2520;
+            border-color: #3d3730;
+        }
+        .payment-section h4 {
+            color: var(--maroon);
+            margin-bottom: 0.8rem;
+        }
+        .payment-methods {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+        .payment-methods span {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.85rem;
+            color: var(--gray-600);
+            font-weight: 500;
+        }
+        [data-theme="dark"] .payment-methods span {
+            color: var(--gray-400);
+        }
+        .payment-methods span i {
+            font-size: 1.4rem;
+            color: var(--maroon);
+        }
+        [data-theme="dark"] .payment-methods span i {
+            color: var(--orange-light);
+        }
+
+        /* ===== GUARANTEES ===== */
+        .guarantees-section {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .guarantee-item {
+            text-align: center;
+            padding: 1.2rem 1rem;
+            background: var(--white);
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--gray-100);
+            transition: var(--transition);
+        }
+        [data-theme="dark"] .guarantee-item {
+            background: #2a2520;
+            border-color: #3d3730;
+        }
+        .guarantee-item:hover {
+            transform: translateY(-4px);
+            border-color: var(--orange);
+        }
+        .guarantee-item i {
+            font-size: 2rem;
+            color: var(--orange);
+            margin-bottom: 0.3rem;
+        }
+        .guarantee-item h5 {
+            font-size: 0.85rem;
+            margin-bottom: 0.1rem;
+        }
+        .guarantee-item p {
+            font-size: 0.75rem;
+            color: var(--gray-500);
+        }
+
+        /* ===== CUSTOM QUOTE CARD ===== */
+        .quote-card {
+            margin-top: 2rem;
+            padding: 2.5rem 2rem;
+            background: linear-gradient(135deg, var(--maroon), var(--maroon-dark));
+            border-radius: var(--radius);
+            text-align: center;
+            color: var(--white);
+        }
+        .quote-card h3 {
+            color: var(--white);
+            font-size: 1.8rem;
+            margin-bottom: 0.3rem;
+        }
+        .quote-card p {
+            opacity: 0.9;
+            font-size: 1.05rem;
+            max-width: 600px;
+            margin: 0 auto 1.2rem;
+        }
+        .quote-card .btn-white {
+            background: var(--white);
+            color: var(--maroon);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+        }
+        .quote-card .btn-white:hover {
+            background: var(--off-white);
+            transform: translateY(-3px);
+        }
+        .quote-card .btn-outline-white {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+        .quote-card .btn-outline-white:hover {
+            background: var(--white);
+            color: var(--maroon);
+            transform: translateY(-3px);
+        }
+
+        /* ===== TESTIMONIALS IN PRICING ===== */
+        .pricing-testimonials {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .pricing-testimonial {
+            background: var(--white);
+            padding: 1.2rem 1.5rem;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--gray-100);
+            transition: var(--transition);
+        }
+        [data-theme="dark"] .pricing-testimonial {
+            background: #2a2520;
+            border-color: #3d3730;
+        }
+        .pricing-testimonial:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+        .pricing-testimonial .stars {
+            color: var(--orange);
+            font-size: 0.8rem;
+            margin-bottom: 0.3rem;
+        }
+        .pricing-testimonial blockquote {
+            font-size: 0.85rem;
+            color: var(--gray-600);
+            font-style: italic;
+            line-height: 1.5;
+        }
+        [data-theme="dark"] .pricing-testimonial blockquote {
+            color: var(--gray-400);
+        }
+        .pricing-testimonial .client {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--maroon);
+            margin-top: 0.4rem;
+        }
+
+        /* ===== FINAL CTA ===== */
+        .final-cta {
+            margin-top: 3rem;
+            padding: 3rem 2rem;
+            background: linear-gradient(135deg, var(--maroon), var(--maroon-dark));
+            border-radius: var(--radius);
+            text-align: center;
+            color: var(--white);
+        }
+        .final-cta h2 {
+            color: var(--white);
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        .final-cta p {
+            font-size: 1.05rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto 1.5rem;
+        }
+        .final-cta .btn-white {
+            background: var(--white);
+            color: var(--maroon);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+        }
+        .final-cta .btn-white:hover {
+            background: var(--off-white);
+            transform: translateY(-3px);
+        }
+        .final-cta .btn-outline-white {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+        .final-cta .btn-outline-white:hover {
+            background: var(--white);
+            color: var(--maroon);
+            transform: translateY(-3px);
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 1024px) {
+            .pricing-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .pricing-card.featured {
+                transform: scale(1);
+            }
+            .pricing-card.featured:hover {
+                transform: scale(1) translateY(-8px);
+            }
+            .guarantees-section {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 768px) {
+            .pricing-grid {
+                grid-template-columns: 1fr;
+                max-width: 420px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .faq-grid {
+                grid-template-columns: 1fr;
+            }
+            .pricing-testimonials {
+                grid-template-columns: 1fr;
+                max-width: 400px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .guarantees-section {
+                grid-template-columns: 1fr 1fr;
+            }
+            .payment-methods {
+                gap: 1rem;
+            }
+            .compare-section {
+                padding: 1.5rem 1rem;
+            }
+            .compare-table {
+                font-size: 0.8rem;
+                min-width: 500px;
+            }
+            .compare-table th,
+            .compare-table td {
+                padding: 0.5rem 0.6rem;
+            }
+            .quote-card h3 {
+                font-size: 1.4rem;
+            }
+            .final-cta h2 {
+                font-size: 1.5rem;
+            }
+            .pricing-tabs button {
+                padding: 0.4rem 1.2rem;
+                font-size: 0.8rem;
+            }
+        }
+        @media (max-width: 480px) {
+            .pricing-grid {
+                max-width: 100%;
+            }
+            .guarantees-section {
+                grid-template-columns: 1fr;
+                max-width: 300px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .pricing-card .price {
+                font-size: 2rem;
+            }
+            .pricing-card {
+                padding: 1.5rem 1.2rem;
+            }
+            .payment-methods span {
+                font-size: 0.75rem;
+            }
+            .payment-methods span i {
+                font-size: 1.1rem;
+            }
+        }
+
+        /* ===== DARK MODE OVERRIDES ===== */
+        [data-theme="dark"] .pricing-card .delivery {
+            color: var(--gray-400);
+        }
+        [data-theme="dark"] .pricing-card ul li .times {
+            color: #ff6b6b;
+        }
+        [data-theme="dark"] .compare-table .highlight {
+            color: var(--orange-light);
+        }
+
+
+          /* ============================================================
+           FOOTER
+           ============================================================ */
+        footer {
+            background: var(--gray-900);
+            color: rgba(255, 255, 255, 0.8);
+            padding: 3rem 0 1.5rem;
+            margin-top: 2rem;
+        }
+        [data-theme="dark"] footer {
+            background: #0d0b09;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        .footer-brand p {
+            font-size: 0.9rem;
+            opacity: 0.7;
+            max-width: 300px;
+            margin: 0.5rem 0;
+        }
+        .footer-brand .socials {
+            display: flex;
+            gap: 0.6rem;
+            margin-top: 0.5rem;
+        }
+        .footer-brand .socials a {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.06);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            transition: var(--transition);
+        }
+        .footer-brand .socials a:hover {
+            background: var(--maroon);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+        /* Footer logo — brand colors */
+        .footer-brand .logo .logo-text .main {
+            color: var(--white);
+        }
+        .footer-brand .logo .logo-text .main span {
+            color: var(--orange);
+        }
+        [data-theme="dark"] .footer-brand .logo .logo-text .main {
+            color: var(--maroon);
+        }
+        [data-theme="dark"] .footer-brand .logo .logo-text .main span {
+            color: var(--orange);
+        }
+
+        .footer-links h4,
+        .footer-services h4,
+        .footer-newsletter h4 {
+            color: var(--white);
+            font-size: 0.95rem;
+            margin-bottom: 0.8rem;
+        }
+        .footer-links ul,
+        .footer-services ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+        }
+        .footer-links ul li a,
+        .footer-services ul li a {
+            font-size: 0.85rem;
+            opacity: 0.7;
+            transition: var(--transition);
+        }
+        .footer-links ul li a:hover,
+        .footer-services ul li a:hover {
+            opacity: 1;
+            color: var(--orange);
+        }
+        .footer-newsletter p {
+            font-size: 0.85rem;
+            opacity: 0.7;
+            margin-bottom: 0.8rem;
+        }
+        .newsletter-form {
+            display: flex;
+            gap: 0.5rem;
+        }
+        .newsletter-form input {
+            flex: 1;
+            padding: 0.5rem 0.8rem;
+            border-radius: 50px;
+            border: none;
+            background: rgba(255, 255, 255, 0.08);
+            color: var(--white);
+            font-family: var(--font-body);
+            font-size: 0.85rem;
+        }
+        .newsletter-form input::placeholder {
+            color: rgba(255, 255, 255, 0.4);
+        }
+        .newsletter-form input:focus {
+            outline: 2px solid var(--orange);
+        }
+        .newsletter-form button {
+            padding: 0.5rem 1.2rem;
+            border-radius: 50px;
+            border: none;
+            background: var(--orange);
+            color: var(--gray-900);
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 0.8rem;
+            white-space: nowrap;
+        }
+        .newsletter-form button:hover {
+            background: var(--orange-light);
+            transform: scale(1.04);
+        }
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            padding-top: 1.2rem;
+            text-align: center;
+            font-size: 0.8rem;
+            opacity: 0.5;
+        }
+
+        /* ============================================================
+           WHATSAPP FLOAT
+           ============================================================ */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: #25D366;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: 0 4px 24px rgba(37, 211, 102, 0.35);
+            z-index: 999;
+            transition: var(--transition);
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.08);
+            box-shadow: 0 6px 32px rgba(37, 211, 102, 0.5);
+        }
+
+        /* ============================================================
+           RESPONSIVE — HEADER & FOOTER
+           ============================================================ */
+        @media (max-width: 992px) {
+            .nav-menu {
+                position: fixed;
+                top: 72px;
+                left: 0;
+                right: 0;
+                background: rgba(255, 255, 255, 0.98);
+                backdrop-filter: blur(12px);
+                flex-direction: column;
+                padding: 1.5rem 2rem;
+                gap: 0.5rem;
+                border-bottom: 1px solid var(--gray-100);
+                transform: translateY(-120%);
+                opacity: 0;
+                transition: all 0.4s ease;
+                box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+                margin: 0;
+                align-items: stretch;
+                border-radius: 0 0 16px 16px;
+            }
+            .nav-menu.open {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            .nav-menu a {
+                padding: 0.6rem 1rem;
+                border-radius: 8px;
+                text-align: center;
+            }
+            .hamburger {
+                display: flex;
+            }
+            [data-theme="dark"] .nav-menu {
+                background: rgba(18, 16, 14, 0.98);
+                border-bottom-color: rgba(255, 255, 255, 0.06);
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            /* ===== FOOTER: 2-COLUMN LINKS ON MOBILE ===== */
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 1.8rem 1.5rem;
+            }
+            .footer-brand {
+                grid-column: 1 / -1;
+                text-align: center;
+            }
+            .footer-brand p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .footer-brand .socials {
+                justify-content: center;
+            }
+            .footer-links h4,
+            .footer-services h4,
+            .footer-newsletter h4 {
+                font-size: 0.9rem;
+            }
+            .footer-links ul,
+            .footer-services ul {
+                gap: 0.2rem;
+            }
+            .footer-links ul li a,
+            .footer-services ul li a {
+                font-size: 0.8rem;
+                padding: 0.1rem 0;
+            }
+            .footer-newsletter {
+                grid-column: 1 / -1;
+                text-align: center;
+            }
+            .footer-newsletter p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .newsletter-form {
+                max-width: 380px;
+                margin: 0 auto;
+            }
+            .footer-bottom {
+                font-size: 0.7rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .nav-actions .btn {
+                display: none;
+            }
+            .logo-text .tag {
+                display: none;
+            }
+            .logo-text .main {
+                font-size: 0.95rem;
+            }
+            .whatsapp-float {
+                width: 48px;
+                height: 48px;
+                font-size: 1.6rem;
+                bottom: 18px;
+                right: 18px;
+            }
+            .footer-grid {
+                gap: 1.5rem 1rem;
+            }
+            .footer-links ul li a,
+            .footer-services ul li a {
+                font-size: 0.75rem;
+            }
+            .newsletter-form {
+                flex-wrap: wrap;
+            }
+            .newsletter-form button {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="page-wrapper">
+
+        <!-- ========== HEADER ========== -->
+        <header id="header">
+            <div class="container nav-container">
+                <a href="index.html" class="logo" aria-label="Victor Tech Home">
+                    <div class="logo-icon"><img src="images/logo/logo.png" alt="Victor Tech official logo" style="width:100%; height:100%; object-fit:contain; padding:4px;" /></div>
+                    <div class="logo-text"><span class="main">VICTOR<span>TECH</span></span><span class="tag">Designing Solutions, Capturing Moments</span></div>
+                </a>
+                <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="pricing.html" class="active">Pricing</a>
+                    <a href="testimonials.html">Testimonials</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+                <div class="nav-actions">
+                    <a href="contact.html" class="btn btn-primary btn-sm">Get Started</a>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
+                    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+                </div>
+            </div>
+        </header>
+
+        <!-- ========== PRICING SECTION ========== -->
+        <section id="pricing">
+            <div class="container">
+
+                <!-- ===== BREADCRUMB ===== -->
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                    <span class="separator">›</span>
+                    <span>Pricing</span>
+                </nav>
+
+                <!-- ===== HEADER ===== -->
+                <div class="text-center reveal">
+                    <span class="section-tag">Pricing</span>
+                    <h2 class="section-title">Choose Your Package</h2>
+                    <p class="section-subtitle">Flexible pricing plans designed to suit businesses of all sizes. Find the perfect package for your needs.</p>
+                </div>
+
+                <!-- ===== SERVICE TABS ===== -->
+                <div class="pricing-tabs reveal" id="pricingTabs">
+                    <button class="active" data-service="websites"><i class="fas fa-code"></i> Websites</button>
+                    <button data-service="graphics"><i class="fas fa-paint-brush"></i> Graphics</button>
+                    <button data-service="photography"><i class="fas fa-camera"></i> Photography</button>
+                    <button data-service="videography"><i class="fas fa-video"></i> Videography</button>
+                    <button data-service="printing"><i class="fas fa-print"></i> Printing</button>
+                    <button data-service="maintenance"><i class="fas fa-sync"></i> Maintenance</button>
+                </div>
+
+                <!-- ===== PRICING GRID ===== -->
+                <div class="pricing-grid" id="pricingGrid">
+                    <!-- Items will be injected by JavaScript -->
+                </div>
+
+                <!-- ===== COMPARISON TABLE ===== -->
+                <div class="compare-section reveal" id="compareSection">
+                    <h3><i class="fas fa-table" style="color:var(--orange);"></i> Compare Website Packages</h3>
+                    <div class="table-wrapper" style="overflow-x:auto;">
+                        <table class="compare-table" id="compareTable">
+                            <thead>
+                                <tr>
+                                    <th>Feature</th>
+                                    <th>Starter</th>
+                                    <th class="featured-col">Business</th>
+                                    <th>Premium</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Responsive Design</td><td class="check">✅</td><td class="check featured-col">✅</td><td class="check">✅</td></tr>
+                                <tr><td>Number of Pages</td><td>5</td><td class="featured-col">10+</td><td>Unlimited</td></tr>
+                                <tr><td>SEO Optimization</td><td>Basic</td><td class="featured-col">Advanced</td><td>Premium</td></tr>
+                                <tr><td>Content Management System</td><td class="times">❌</td><td class="check featured-col">✅</td><td class="check">✅</td></tr>
+                                <tr><td>Mobile App Integration</td><td class="times">❌</td><td class="times featured-col">❌</td><td class="check">✅</td></tr>
+                                <tr><td>Branding Package</td><td class="times">❌</td><td class="check featured-col">✅</td><td class="check">✅</td></tr>
+                                <tr><td>Photography</td><td class="times">❌</td><td class="times featured-col">❌</td><td class="check">✅</td></tr>
+                                <tr><td>Free Support</td><td>1 Month</td><td class="featured-col">3 Months</td><td>12 Months</td></tr>
+                                <tr><td>Free Hosting</td><td class="times">❌</td><td class="check featured-col">✅</td><td class="check">✅</td></tr>
+                                <tr><td>Custom Domain</td><td class="times">❌</td><td class="check featured-col">✅</td><td class="check">✅</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- ===== PRICING TESTIMONIALS ===== -->
+                <div class="pricing-testimonials reveal">
+                    <div class="pricing-testimonial">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <blockquote>"Victor Tech delivered our website within one week and exceeded our expectations."</blockquote>
+                        <div class="client">— Sarah Nambi, BrightFuture Schools</div>
+                    </div>
+                    <div class="pricing-testimonial">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <blockquote>"Amazing value for money. The branding package transformed our company image."</blockquote>
+                        <div class="client">— John Muwonge, JMS Enterprises</div>
+                    </div>
+                    <div class="pricing-testimonial">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <blockquote>"Professional, affordable, and delivered on time. Highly recommend Victor Tech."</blockquote>
+                        <div class="client">— Grace Akiiki, Grace Events</div>
+                    </div>
+                </div>
+
+                <!-- ===== GUARANTEES ===== -->
+                <div class="guarantees-section reveal">
+                    <div class="guarantee-item"><i class="fas fa-headset"></i><h5>Free Consultation</h5><p>Discuss your project with our experts</p></div>
+                    <div class="guarantee-item"><i class="fas fa-file-invoice"></i><h5>Free Quotation</h5><p>No obligation, just a clear estimate</p></div>
+                    <div class="guarantee-item"><i class="fas fa-shield-alt"></i><h5>No Hidden Charges</h5><p>Transparent pricing, no surprises</p></div>
+                    <div class="guarantee-item"><i class="fas fa-smile"></i><h5>Satisfaction Guaranteed</h5><p>We don't stop until you're happy</p></div>
+                </div>
+
+                <!-- ===== PAYMENT METHODS ===== -->
+                <div class="payment-section reveal">
+                    <h4><i class="fas fa-credit-card"></i> We Accept</h4>
+                    <div class="payment-methods">
+                        <span><i class="fas fa-mobile-alt"></i> MTN Mobile Money</span>
+                        <span><i class="fas fa-mobile-alt"></i> Airtel Money</span>
+                        <span><i class="fas fa-university"></i> Bank Transfer</span>
+                        <span><i class="fas fa-money-bill"></i> Cash</span>
+                        <span><i class="fas fa-credit-card"></i> Visa / MasterCard</span>
+                    </div>
+                </div>
+
+                <!-- ===== FAQ ===== -->
+                <div class="faq-section reveal">
+                    <h3><i class="fas fa-question-circle" style="color:var(--orange);"></i> Frequently Asked Questions</h3>
+                    <div class="faq-grid" id="faqGrid">
+                        <div class="faq-item">
+                            <div class="faq-question">Can I pay in installments? <i class="fas fa-chevron-down"></i></div>
+                            <div class="faq-answer">Yes! We offer flexible payment plans for most projects. Speak to our team to arrange a payment schedule that works for you.</div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">Can prices be negotiated? <i class="fas fa-chevron-down"></i></div>
+                            <div class="faq-answer">Absolutely. Every project is unique, and we're happy to discuss custom pricing based on your specific requirements and budget.</div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">Do you redesign existing websites? <i class="fas fa-chevron-down"></i></div>
+                            <div class="faq-answer">Yes! We can redesign or refresh your existing website to give it a modern, professional look while keeping your content.</div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">How long does development take? <i class="fas fa-chevron-down"></i></div>
+                            <div class="faq-answer">Timelines vary by project scope. A simple website takes 3-5 days, while complex projects like e-commerce or portals take 10-20 days.</div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">Do you offer free revisions? <i class="fas fa-chevron-down"></i></div>
+                            <div class="faq-answer">Yes! We offer unlimited revisions until you're 100% satisfied with the final result. Your satisfaction is our priority.</div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">What happens after payment? <i class="fas fa-chevron-down"></i></div>
+                            <div class="faq-answer">Once payment is received, we begin work immediately. You'll receive regular updates and have direct communication with your project manager.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== CUSTOM QUOTE CARD ===== -->
+                <div class="quote-card reveal">
+                    <h3><i class="fas fa-file-invoice"></i> Need Something Custom?</h3>
+                    <p>Don't see a package that fits your needs? Let's discuss your project and create a custom solution.</p>
+                    <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+                        <a href="contact.html" class="btn btn-white"><i class="fas fa-paper-plane"></i> Request Free Quote</a>
+                        <a href="https://wa.me/256766783991" target="_blank" class="btn btn-outline-white"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+                    </div>
+                </div>
+
+                <!-- ===== FINAL CTA ===== -->
+                <div class="final-cta reveal">
+                    <h2>Ready to Grow Your Business?</h2>
+                    <p>Get a free consultation and a personalized quotation from Victor Tech. Let's build something amazing together.</p>
+                    <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+                        <a href="contact.html" class="btn btn-white"><i class="fas fa-rocket"></i> Request Free Quote</a>
+                        <a href="https://wa.me/256766783991" target="_blank" class="btn btn-outline-white"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+                        <a href="tel:+256766783991" class="btn btn-outline-white"><i class="fas fa-phone"></i> Call Now</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+      <!-- ========== FOOTER ========== -->
+        <footer>
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a href="index.html" class="logo">
+                            <div class="logo-icon"><img src="images/logo/logo.png" alt="Victor Tech official logo" style="width:100%; height:100%; object-fit:contain; padding:4px;" /></div>
+                            <div class="logo-text"><span class="main">VICTOR<span>TECH</span></span><span class="tag">Designing Solutions, Capturing Moments</span></div>
+                        </a>
+                        <p>Designing Solutions, Capturing Moments, Delivering Excellence.</p>
+                        <div class="socials">
+                            <a href="https://facebook.com/victortech.ug" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://instagram.com/victortech.ug" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://twitter.com/victortechug" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.youtube.com/@victortech-ug" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            <a href="https://linkedin.com/company/victortech" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-services">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="services.html">Technology</a></li>
+                            <li><a href="services.html">Graphics Design</a></li>
+                            <li><a href="services.html">Photography</a></li>
+                            <li><a href="services.html">Videography</a></li>
+                            <li><a href="services.html">Secretarial</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-newsletter">
+                        <h4>Newsletter</h4>
+                        <p>Subscribe for updates, tips, and exclusive offers.</p>
+                        <form class="newsletter-form" id="newsletterForm">
+                            <input type="email" placeholder="Your email address" required aria-label="Email for newsletter" />
+                            <button type="submit"><i class="fas fa-arrow-right"></i> Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    &copy; 2026 <strong>VICTOR TECH</strong>. All Rights Reserved. &mdash; Mbalala-Mukono, Uganda.<br />
+                    <span style="font-size:0.8rem; opacity:0.5;">Designed &amp; Developed by Victor Tech</span>
+                </div>
+            </div>
+        </footer>
+
+        <!-- ========== FLOATING WHATSAPP ========== -->
+        <a href="https://wa.me/256766783991" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+    </div>
+
+
+    <!-- ========== EXTERNAL JS ========== -->
+    <script src="script.js"></script>
+
+    <!-- ========== PRICING PAGE SPECIFIC JS ========== -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+
+           
+
+            // ===== HAMBURGER MENU =====
+            const hamburger = document.getElementById('hamburger');
+            const navMenu = document.getElementById('navMenu');
+            if (hamburger && navMenu) {
+                hamburger.addEventListener('click', function() {
+                    navMenu.classList.toggle('open');
+                    hamburger.classList.toggle('active');
+                });
+                navMenu.querySelectorAll('a').forEach(function(link) {
+                    link.addEventListener('click', function() {
+                        navMenu.classList.remove('open');
+                        hamburger.classList.remove('active');
+                    });
+                });
+            }
+
+            // ===== STICKY HEADER =====
+            const header = document.getElementById('header');
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+
+            // ===== SCROLL REVEAL =====
+            const revealElements = document.querySelectorAll('.reveal');
+            if ('IntersectionObserver' in window) {
+                const observer = new IntersectionObserver(function(entries) {
+                    entries.forEach(function(entry) {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+                revealElements.forEach(function(el) { observer.observe(el); });
+            }
+
+            // ===== PRICING DATA =====
+            const pricingData = {
+                websites: [
+                    {
+                        id: 'ws1',
+                        title: 'Starter Website',
+                        icon: 'fa-globe',
+                        price: 'UGX 500,000',
+                        period: 'One-time',
+                        delivery: '3-5 Days',
+                        featured: false,
+                        badge: '',
+                        features: [
+                            'Basic Website Design',
+                            '5 Pages',
+                            'Mobile Responsive',
+                            '1 Month Support',
+                            'Basic SEO Setup',
+                            'Contact Form'
+                        ],
+                        cta: 'Choose Starter'
+                    },
+                    {
+                        id: 'ws2',
+                        title: 'Business Website',
+                        icon: 'fa-building',
+                        price: 'UGX 1,200,000',
+                        period: 'One-time',
+                        delivery: '5-10 Days',
+                        featured: true,
+                        badge: 'Most Popular',
+                        features: [
+                            'Custom Website Design',
+                            '10+ Pages',
+                            'Mobile App Integration',
+                            'Branding Package',
+                            '3 Months Support',
+                            'Advanced SEO',
+                            'Free Hosting (1 Year)',
+                            'Content Management System'
+                        ],
+                        cta: 'Choose Business'
+                    },
+                    {
+                        id: 'ws3',
+                        title: 'Premium Website',
+                        icon: 'fa-rocket',
+                        price: 'UGX 2,500,000',
+                        period: 'One-time',
+                        delivery: '10-20 Days',
+                        featured: false,
+                        badge: 'Best Value',
+                        features: [
+                            'Full Custom Development',
+                            'Unlimited Pages',
+                            'Web + Mobile App',
+                            'Full Branding Suite',
+                            '12 Months Support',
+                            'Premium SEO &amp; Analytics',
+                            'Photography &amp; Video',
+                            'E-commerce Ready'
+                        ],
+                        cta: 'Choose Premium'
+                    }
+                ],
+                graphics: [
+                    {
+                        id: 'g1',
+                        title: 'Logo Design',
+                        icon: 'fa-tag',
+                        price: 'UGX 80,000',
+                        period: 'One-time',
+                        delivery: '2-3 Days',
+                        featured: false,
+                        badge: '',
+                        features: [
+                            '2 Concept Options',
+                            '3 Revisions',
+                            'High-Resolution Files',
+                            'Color Variations',
+                            'Vector & PNG Formats'
+                        ],
+                        cta: 'Order Now'
+                    },
+                    {
+                        id: 'g2',
+                        title: 'Poster Design',
+                        icon: 'fa-image',
+                        price: 'UGX 50,000',
+                        period: 'One-time',
+                        delivery: '1-2 Days',
+                        featured: false,
+                        badge: '',
+                        features: [
+                            'Custom Design',
+                            'High-Resolution Output',
+                            'Print-Ready Format',
+                            '2 Revisions Included'
+                        ],
+                        cta: 'Order Now'
+                    },
+                    {
+                        id: 'g3',
+                        title: 'Business Card Design',
+                        icon: 'fa-id-card',
+                        price: 'UGX 40,000',
+                        period: 'One-time',
+                        delivery: '1-2 Days',
+                        featured: false,
+                        badge: 'New',
+                        features: [
+                            'Premium Design',
+                            'Print-Ready Files',
+                            '4 Revisions',
+                            'Multiple Layout Options'
+                        ],
+                        cta: 'Order Now'
+                    },
+                    {
+                        id: 'g4',
+                        title: 'Complete Branding Suite',
+                        icon: 'fa-palette',
+                        price: 'UGX 400,000',
+                        period: 'One-time',
+                        delivery: '5-7 Days',
+                        featured: true,
+                        badge: 'Most Popular',
+                        features: [
+                            'Logo Design',
+                            'Business Cards',
+                            'Letterhead & Envelope',
+                            'Style Guide',
+                            'Social Media Templates',
+                            'Unlimited Revisions'
+                        ],
+                        cta: 'Choose Suite'
+                    }
+                ],
+                photography: [
+                    {
+                        id: 'p1',
+                        title: 'Passport Photos',
+                        icon: 'fa-id-card',
+                        price: 'UGX 10,000',
+                        period: 'Per Person',
+                        delivery: '30 Minutes',
+                        featured: false,
+                        badge: '',
+                        features: [
+                            '4 Copies',
+                            'Digital Copy',
+                            'Professional Lighting',
+                            'Retouching Included'
+                        ],
+                        cta: 'Book Now'
+                    },
+                    {
+                        id: 'p2',
+                        title: 'Graduation Photography',
+                        icon: 'fa-graduation-cap',
+                        price: 'From UGX 300,000',
+                        period: 'One-time',
+                        delivery: '3-5 Days',
+                        featured: false,
+                        badge: '',
+                        features: [
+                            'Full Graduation Coverage',
+                            'Group & Individual Photos',
+                            'Digital Gallery',
+                            'Print Packages Available'
+                        ],
+                        cta: 'Book Now'
+                    },
+                    {
+                        id: 'p3',
+                        title: 'Wedding Photography',
+                        icon: 'fa-heart',
+                        price: 'Custom Quote',
+                        period: 'One-time',
+                        delivery: '7-10 Days',
+                        featured: true,
+                        badge: 'Most Popular',
+                        features: [
+                            'Full Wedding Coverage',
+                            'Candid & Posed Shots',
+                            'Digital Gallery',
+                            'Album Printing',
+                            'Pre-Wedding Shoot'
+                        ],
+                        cta: 'Request Quote'
+                    }
+                ],
+                videography: [
+                    {
+                        id: 'v1',
+                        title: 'Event Coverage',
+                        icon: 'fa-calendar-check',
+                        price: 'From UGX 250,000',
+                        period: 'One-time',
+                        delivery: '3-5 Days',
+                        featured: false,
+                        badge: '',
+                        features: [
+                            'Full Event Coverage',
+                            'Cinematic Editing',
+                            'Highlight Reel',
+                            'Digital Delivery'
+                        ],
+                        cta: 'Book Now'
+                    },
+                    {
+                        id: 'v2',
+                        title: 'Corporate Video',
+                        icon: 'fa-building',
+                        price: 'Custom Quote',
+                        period: 'One-time',
+                        delivery: '7-14 Days',
+                        featured: true,
+                        badge: 'Best Value',
+                        features: [
+                            'Script Development',
+                            'Professional Filming',
+                            'Post-Production Editing',
+                            'Social Media Formats'
+                        ],
+                        cta: 'Request Quote'
+                    },
+                    {
+                        id: 'v3',
+                        title: 'Wedding Videography',
+                        icon: 'fa-heart',
+                        price: 'Custom Quote',
+                        period: 'One-time',
+                        delivery: '14-21 Days',
+                        featured: false,
+                        badge: '',
+                        features: [
+                            'Full Wedding Coverage',
+                            'Cinematic Highlight',
+                            'Documentary Style Edit',
+                            'Digital & DVD Delivery'
+                        ],
+                        cta: 'Request Quote'
+                    }
+                ],
+                printing: [
+                    {
+                        id: 'pr1',
+                        title: 'Business Cards (100)',
+                        icon: 'fa-id-card',
+                        price: 'UGX 40,000',
+                        period: 'One-time',
+                        delivery: '1-2 Days',
+                        featured: false,
+                        badge: '',
+                        features: [
+                            'Premium Card Stock',
+                            'UV Coating',
+                            'Full Color Printing',
+                            'Design Included'
+                        ],
+                        cta: 'Order Now'
+                    },
+                    {
+                        id: 'pr2',
+                        title: 'Event Banners',
+                        icon: 'fa-flag',
+                        price: 'From UGX 70,000',
+                        period: 'One-time',
+                        delivery: '2-3 Days',
+                        featured: false,
+                        badge: '',
+                        features: [
+                            'Large Format Printing',
+                            'Custom Sizes',
+                            'Indoor & Outdoor Options',
+                            'Design Included'
+                        ],
+                        cta: 'Order Now'
+                    },
+                    {
+                        id: 'pr3',
+                        title: 'Certificates (50)',
+                        icon: 'fa-award',
+                        price: 'UGX 60,000',
+                        period: 'One-time',
+                        delivery: '2-3 Days',
+                        featured: false,
+                        badge: 'New',
+                        features: [
+                            'Premium Certificate Design',
+                            'Full Color Printing',
+                            'Customizable Text',
+                            'Quality Card Stock'
+                        ],
+                        cta: 'Order Now'
+                    }
+                ],
+                maintenance: [
+                    {
+                        id: 'm1',
+                        title: 'Starter Maintenance',
+                        icon: 'fa-shield-alt',
+                        price: 'UGX 50,000',
+                        period: 'Monthly',
+                        delivery: 'Ongoing',
+                        featured: false,
+                        badge: '',
+                        features: [
+                            'Security Updates',
+                            'Monthly Backups',
+                            'Performance Monitoring',
+                            'Email Support'
+                        ],
+                        cta: 'Choose Starter'
+                    },
+                    {
+                        id: 'm2',
+                        title: 'Business Maintenance',
+                        icon: 'fa-shield-alt',
+                        price: 'UGX 120,000',
+                        period: 'Monthly',
+                        delivery: 'Ongoing',
+                        featured: true,
+                        badge: 'Most Popular',
+                        features: [
+                            'Everything in Starter',
+                            'Weekly Backups',
+                            'Content Updates',
+                            'Priority Support',
+                            'Performance Optimization'
+                        ],
+                        cta: 'Choose Business'
+                    },
+                    {
+                        id: 'm3',
+                        title: 'Premium Maintenance',
+                        icon: 'fa-shield-alt',
+                        price: 'UGX 250,000',
+                        period: 'Monthly',
+                        delivery: 'Ongoing',
+                        featured: false,
+                        badge: 'Best Value',
+                        features: [
+                            'Everything in Business',
+                            'Daily Backups',
+                            'Unlimited Content Updates',
+                            '24/7 Phone Support',
+                            'Security Audits',
+                            'Analytics Reporting'
+                        ],
+                        cta: 'Choose Premium'
+                    }
+                ]
+            };
+
+            // ===== RENDER PRICING =====
+            const pricingGrid = document.getElementById('pricingGrid');
+
+            function renderPricing(service) {
+                const items = pricingData[service] || pricingData.websites;
+                const maxItems = 3;
+
+                pricingGrid.innerHTML = items.slice(0, maxItems).map(function(item, index) {
+                    const featuredClass = item.featured ? 'featured' : '';
+                    const badgeHtml = item.badge ? '<span class="badge ' + (item.badge === 'Most Popular' ? '' : item.badge === 'Best Value' ? 'best-value' : 'new') + '">' + item.badge + '</span>' : '';
+
+                    var featuresHtml = item.features.map(function(f) {
+                        return '<li><i class="fas fa-check check"></i> ' + f + '</li>';
+                    }).join('');
+
+                    return '<div class="pricing-card ' + featuredClass + '">' +
+                        badgeHtml +
+                        '<div class="card-icon"><i class="fas ' + item.icon + '"></i></div>' +
+                        '<h3>' + item.title + '</h3>' +
+                        '<div class="price">' + item.price + ' <span>/ ' + item.period + '</span></div>' +
+                        '<div class="delivery"><i class="fas fa-clock"></i> Estimated Delivery: <strong>' + item.delivery + '</strong></div>' +
+                        '<ul>' + featuresHtml + '</ul>' +
+                        '<a href="contact.html" class="btn ' + (item.featured ? 'btn-primary' : 'btn-outline') + '"><span class="btn-icon">' + (item.cta.includes('Quote') ? '📄' : '🚀') + '</span> ' + item.cta + '</a>' +
+                        '</div>';
+                }).join('');
+            }
+
+            // ===== TAB SWITCHING =====
+            const tabButtons = document.querySelectorAll('.pricing-tabs button');
+            tabButtons.forEach(function(btn) {
+                btn.addEventListener('click', function() {
+                    tabButtons.forEach(function(b) { b.classList.remove('active'); });
+                    this.classList.add('active');
+
+                    const service = this.getAttribute('data-service');
+                    renderPricing(service);
+
+                    // Update comparison table visibility
+                    const compareSection = document.getElementById('compareSection');
+                    if (service === 'websites') {
+                        compareSection.style.display = 'block';
+                    } else {
+                        compareSection.style.display = 'none';
+                    }
+                });
+            });
+
+            // ===== INITIAL RENDER =====
+            renderPricing('websites');
+
+            // ===== FAQ ACCORDION =====
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(function(item) {
+                item.addEventListener('click', function() {
+                    this.classList.toggle('open');
+                    // Close others (optional)
+                    // faqItems.forEach(function(other) {
+                    //     if (other !== item) other.classList.remove('open');
+                    // });
+                });
+            });
+
+            // ===== NEWSLETTER =====
+            const newsletterForm = document.getElementById('newsletterForm');
+            if (newsletterForm) {
+                newsletterForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const input = this.querySelector('input');
+                    const btn = this.querySelector('button');
+                    const original = btn.innerHTML;
+                    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
+                    setTimeout(function() {
+                        btn.innerHTML = '<i class="fas fa-check"></i> Done!';
+                        input.value = '';
+                        setTimeout(function() { btn.innerHTML = original; }, 2000);
+                    }, 1000);
+                });
+            }
+
+        });
+    </script>
+
+</body>
+</html>
